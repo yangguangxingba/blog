@@ -1,0 +1,16 @@
+<div class="ql-container">
+            <div class="ql-editor">
+              <div
+                v-if="isEdit"
+                v-html="queryForm.content"
+            ></div>
+            </div>
+          </div>
+
+
+
+<!-- 富文本编辑器 -->
+                <editorTool
+                  @setEditData = editSetEditData
+                  :editContractCont = editContractData.supplementAgreement
+                />

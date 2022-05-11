@@ -1,0 +1,1208 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>JavaScript核心知识 | zmx的前端日志</title>
+    <meta name="generator" content="VuePress 1.8.2">
+    <link rel="icon" href="/blog/favicon.ico">
+    <meta name="description" content="zmx2321">
+    
+    <link rel="preload" href="/blog/assets/css/0.styles.82214e06.css" as="style"><link rel="preload" href="/blog/assets/js/app.6428f6c2.js" as="script"><link rel="preload" href="/blog/assets/js/4.266a15b9.js" as="script"><link rel="preload" href="/blog/assets/js/5.c5d0b239.js" as="script"><link rel="preload" href="/blog/assets/js/157.39ebd509.js" as="script"><link rel="prefetch" href="/blog/assets/js/1.faceb351.js"><link rel="prefetch" href="/blog/assets/js/10.f0b23014.js"><link rel="prefetch" href="/blog/assets/js/100.ace8c26d.js"><link rel="prefetch" href="/blog/assets/js/101.2aa1bd36.js"><link rel="prefetch" href="/blog/assets/js/102.a86a2726.js"><link rel="prefetch" href="/blog/assets/js/103.dcfa3b54.js"><link rel="prefetch" href="/blog/assets/js/104.8269949f.js"><link rel="prefetch" href="/blog/assets/js/105.fedf625f.js"><link rel="prefetch" href="/blog/assets/js/106.7709178b.js"><link rel="prefetch" href="/blog/assets/js/107.c23fae5c.js"><link rel="prefetch" href="/blog/assets/js/108.5c31f5e4.js"><link rel="prefetch" href="/blog/assets/js/109.08d42bfd.js"><link rel="prefetch" href="/blog/assets/js/11.7f1c3a30.js"><link rel="prefetch" href="/blog/assets/js/110.bd14b392.js"><link rel="prefetch" href="/blog/assets/js/111.35fbbf46.js"><link rel="prefetch" href="/blog/assets/js/112.d8d0b972.js"><link rel="prefetch" href="/blog/assets/js/113.a8834278.js"><link rel="prefetch" href="/blog/assets/js/114.c73f7465.js"><link rel="prefetch" href="/blog/assets/js/115.24b312a3.js"><link rel="prefetch" href="/blog/assets/js/116.99fa9acb.js"><link rel="prefetch" href="/blog/assets/js/117.03450d7d.js"><link rel="prefetch" href="/blog/assets/js/118.56f7b988.js"><link rel="prefetch" href="/blog/assets/js/119.37979bd2.js"><link rel="prefetch" href="/blog/assets/js/12.2d818dd0.js"><link rel="prefetch" href="/blog/assets/js/120.f8445472.js"><link rel="prefetch" href="/blog/assets/js/121.23dbcb62.js"><link rel="prefetch" href="/blog/assets/js/122.8af297c5.js"><link rel="prefetch" href="/blog/assets/js/123.61ecb034.js"><link rel="prefetch" href="/blog/assets/js/124.c566ba47.js"><link rel="prefetch" href="/blog/assets/js/125.aab70411.js"><link rel="prefetch" href="/blog/assets/js/126.d9cd1b77.js"><link rel="prefetch" href="/blog/assets/js/127.fb8f780b.js"><link rel="prefetch" href="/blog/assets/js/128.c811a35c.js"><link rel="prefetch" href="/blog/assets/js/129.4a668cc7.js"><link rel="prefetch" href="/blog/assets/js/13.be91ee17.js"><link rel="prefetch" href="/blog/assets/js/130.b40dea98.js"><link rel="prefetch" href="/blog/assets/js/131.023f4c12.js"><link rel="prefetch" href="/blog/assets/js/132.1dba5a75.js"><link rel="prefetch" href="/blog/assets/js/133.ab47f88a.js"><link rel="prefetch" href="/blog/assets/js/134.875eb1f0.js"><link rel="prefetch" href="/blog/assets/js/135.80db697d.js"><link rel="prefetch" href="/blog/assets/js/136.9ac4904e.js"><link rel="prefetch" href="/blog/assets/js/137.2a0ee363.js"><link rel="prefetch" href="/blog/assets/js/138.e3aa8f71.js"><link rel="prefetch" href="/blog/assets/js/139.293d4094.js"><link rel="prefetch" href="/blog/assets/js/14.7969c266.js"><link rel="prefetch" href="/blog/assets/js/140.7f9498a2.js"><link rel="prefetch" href="/blog/assets/js/141.784245f8.js"><link rel="prefetch" href="/blog/assets/js/142.5f96319b.js"><link rel="prefetch" href="/blog/assets/js/143.c6f038e4.js"><link rel="prefetch" href="/blog/assets/js/144.cf73253a.js"><link rel="prefetch" href="/blog/assets/js/145.726b008f.js"><link rel="prefetch" href="/blog/assets/js/146.5d968e0e.js"><link rel="prefetch" href="/blog/assets/js/147.8b54761e.js"><link rel="prefetch" href="/blog/assets/js/148.25f8d8ce.js"><link rel="prefetch" href="/blog/assets/js/149.03d070b4.js"><link rel="prefetch" href="/blog/assets/js/15.d1ca9db9.js"><link rel="prefetch" href="/blog/assets/js/150.e1b2d386.js"><link rel="prefetch" href="/blog/assets/js/151.fb9f4df2.js"><link rel="prefetch" href="/blog/assets/js/152.44b33432.js"><link rel="prefetch" href="/blog/assets/js/153.c009f2c4.js"><link rel="prefetch" href="/blog/assets/js/154.c11904fa.js"><link rel="prefetch" href="/blog/assets/js/155.8e0b1e54.js"><link rel="prefetch" href="/blog/assets/js/156.48684668.js"><link rel="prefetch" href="/blog/assets/js/158.c6874fd6.js"><link rel="prefetch" href="/blog/assets/js/159.55826719.js"><link rel="prefetch" href="/blog/assets/js/16.fb19ebe4.js"><link rel="prefetch" href="/blog/assets/js/160.9cf72810.js"><link rel="prefetch" href="/blog/assets/js/161.6098549f.js"><link rel="prefetch" href="/blog/assets/js/162.3eacdf73.js"><link rel="prefetch" href="/blog/assets/js/163.04fc079b.js"><link rel="prefetch" href="/blog/assets/js/164.1086d160.js"><link rel="prefetch" href="/blog/assets/js/165.182133b2.js"><link rel="prefetch" href="/blog/assets/js/166.fcf46f68.js"><link rel="prefetch" href="/blog/assets/js/167.f83573ad.js"><link rel="prefetch" href="/blog/assets/js/168.b7311df4.js"><link rel="prefetch" href="/blog/assets/js/169.9cc5761b.js"><link rel="prefetch" href="/blog/assets/js/17.349e0845.js"><link rel="prefetch" href="/blog/assets/js/170.2abb86a0.js"><link rel="prefetch" href="/blog/assets/js/171.7a3ecbf0.js"><link rel="prefetch" href="/blog/assets/js/172.8d4c431f.js"><link rel="prefetch" href="/blog/assets/js/173.edaf392d.js"><link rel="prefetch" href="/blog/assets/js/174.7f45187c.js"><link rel="prefetch" href="/blog/assets/js/175.240d36e0.js"><link rel="prefetch" href="/blog/assets/js/176.d2910b9a.js"><link rel="prefetch" href="/blog/assets/js/177.cb6f873a.js"><link rel="prefetch" href="/blog/assets/js/178.4ddaa8e5.js"><link rel="prefetch" href="/blog/assets/js/179.7f8156a0.js"><link rel="prefetch" href="/blog/assets/js/18.fc8b65b3.js"><link rel="prefetch" href="/blog/assets/js/180.842026fb.js"><link rel="prefetch" href="/blog/assets/js/181.a75bbbfe.js"><link rel="prefetch" href="/blog/assets/js/182.faea06c2.js"><link rel="prefetch" href="/blog/assets/js/183.fc72361d.js"><link rel="prefetch" href="/blog/assets/js/184.dbccc132.js"><link rel="prefetch" href="/blog/assets/js/185.a200f8ff.js"><link rel="prefetch" href="/blog/assets/js/186.8ba182c9.js"><link rel="prefetch" href="/blog/assets/js/187.f6dd368f.js"><link rel="prefetch" href="/blog/assets/js/188.f7ecdac9.js"><link rel="prefetch" href="/blog/assets/js/189.3f0f0fa1.js"><link rel="prefetch" href="/blog/assets/js/19.651a0f21.js"><link rel="prefetch" href="/blog/assets/js/190.0f8ce7d4.js"><link rel="prefetch" href="/blog/assets/js/191.c5b85d7e.js"><link rel="prefetch" href="/blog/assets/js/192.d644b562.js"><link rel="prefetch" href="/blog/assets/js/193.c2716d87.js"><link rel="prefetch" href="/blog/assets/js/194.784c0389.js"><link rel="prefetch" href="/blog/assets/js/195.ad5a94c4.js"><link rel="prefetch" href="/blog/assets/js/196.01de2a36.js"><link rel="prefetch" href="/blog/assets/js/197.031c6802.js"><link rel="prefetch" href="/blog/assets/js/198.2e42f570.js"><link rel="prefetch" href="/blog/assets/js/199.554399a1.js"><link rel="prefetch" href="/blog/assets/js/2.f2f9463c.js"><link rel="prefetch" href="/blog/assets/js/20.0f0b33ae.js"><link rel="prefetch" href="/blog/assets/js/200.9a8668a2.js"><link rel="prefetch" href="/blog/assets/js/201.98047ed0.js"><link rel="prefetch" href="/blog/assets/js/202.e264d1dd.js"><link rel="prefetch" href="/blog/assets/js/203.96ef9850.js"><link rel="prefetch" href="/blog/assets/js/204.1248c0f9.js"><link rel="prefetch" href="/blog/assets/js/205.8c9b4ca3.js"><link rel="prefetch" href="/blog/assets/js/206.aaa1b40c.js"><link rel="prefetch" href="/blog/assets/js/207.a55414dc.js"><link rel="prefetch" href="/blog/assets/js/208.0d01546a.js"><link rel="prefetch" href="/blog/assets/js/209.24ae2214.js"><link rel="prefetch" href="/blog/assets/js/21.15c735fa.js"><link rel="prefetch" href="/blog/assets/js/210.b2d811d9.js"><link rel="prefetch" href="/blog/assets/js/211.0a6233ec.js"><link rel="prefetch" href="/blog/assets/js/212.db86eb42.js"><link rel="prefetch" href="/blog/assets/js/213.68b6b8d5.js"><link rel="prefetch" href="/blog/assets/js/214.92c00c0c.js"><link rel="prefetch" href="/blog/assets/js/215.303263de.js"><link rel="prefetch" href="/blog/assets/js/216.55d59fd5.js"><link rel="prefetch" href="/blog/assets/js/217.4fe23082.js"><link rel="prefetch" href="/blog/assets/js/218.f3c1ede7.js"><link rel="prefetch" href="/blog/assets/js/219.9bdc4572.js"><link rel="prefetch" href="/blog/assets/js/22.3e0c3146.js"><link rel="prefetch" href="/blog/assets/js/220.4ab436c2.js"><link rel="prefetch" href="/blog/assets/js/221.e0099e78.js"><link rel="prefetch" href="/blog/assets/js/222.f07843c6.js"><link rel="prefetch" href="/blog/assets/js/223.fe93f579.js"><link rel="prefetch" href="/blog/assets/js/224.a43c3529.js"><link rel="prefetch" href="/blog/assets/js/225.f1e87389.js"><link rel="prefetch" href="/blog/assets/js/226.3eca4b27.js"><link rel="prefetch" href="/blog/assets/js/227.ae595f7c.js"><link rel="prefetch" href="/blog/assets/js/228.910b4eaf.js"><link rel="prefetch" href="/blog/assets/js/229.eef53ffa.js"><link rel="prefetch" href="/blog/assets/js/23.8972052a.js"><link rel="prefetch" href="/blog/assets/js/230.5d7658f8.js"><link rel="prefetch" href="/blog/assets/js/231.2ef34347.js"><link rel="prefetch" href="/blog/assets/js/232.8919ad2d.js"><link rel="prefetch" href="/blog/assets/js/233.4f4740e9.js"><link rel="prefetch" href="/blog/assets/js/234.0cef9aa0.js"><link rel="prefetch" href="/blog/assets/js/235.7e64a860.js"><link rel="prefetch" href="/blog/assets/js/236.17d9d524.js"><link rel="prefetch" href="/blog/assets/js/237.91d27cd5.js"><link rel="prefetch" href="/blog/assets/js/238.45849a0d.js"><link rel="prefetch" href="/blog/assets/js/239.c5ae0cb6.js"><link rel="prefetch" href="/blog/assets/js/24.9ab2c6d0.js"><link rel="prefetch" href="/blog/assets/js/240.957c74ac.js"><link rel="prefetch" href="/blog/assets/js/241.8978e644.js"><link rel="prefetch" href="/blog/assets/js/242.cab864cc.js"><link rel="prefetch" href="/blog/assets/js/243.82bbe191.js"><link rel="prefetch" href="/blog/assets/js/244.822baf2c.js"><link rel="prefetch" href="/blog/assets/js/245.9eee1988.js"><link rel="prefetch" href="/blog/assets/js/246.b65162ad.js"><link rel="prefetch" href="/blog/assets/js/247.75c1b3b2.js"><link rel="prefetch" href="/blog/assets/js/248.da8577c1.js"><link rel="prefetch" href="/blog/assets/js/249.bc8eb129.js"><link rel="prefetch" href="/blog/assets/js/25.1f1ace96.js"><link rel="prefetch" href="/blog/assets/js/250.35dfe1c2.js"><link rel="prefetch" href="/blog/assets/js/251.318cc34a.js"><link rel="prefetch" href="/blog/assets/js/252.96543adc.js"><link rel="prefetch" href="/blog/assets/js/253.69e3eecd.js"><link rel="prefetch" href="/blog/assets/js/254.36ff5ad2.js"><link rel="prefetch" href="/blog/assets/js/255.b5fc941d.js"><link rel="prefetch" href="/blog/assets/js/256.acc36ac3.js"><link rel="prefetch" href="/blog/assets/js/257.d327fa1c.js"><link rel="prefetch" href="/blog/assets/js/258.054d7f2f.js"><link rel="prefetch" href="/blog/assets/js/259.7581b196.js"><link rel="prefetch" href="/blog/assets/js/26.68fae881.js"><link rel="prefetch" href="/blog/assets/js/260.a5651327.js"><link rel="prefetch" href="/blog/assets/js/261.96c5ee74.js"><link rel="prefetch" href="/blog/assets/js/262.dccbbd8b.js"><link rel="prefetch" href="/blog/assets/js/263.a2083dd7.js"><link rel="prefetch" href="/blog/assets/js/264.652dae04.js"><link rel="prefetch" href="/blog/assets/js/265.c586ec87.js"><link rel="prefetch" href="/blog/assets/js/266.611a5b69.js"><link rel="prefetch" href="/blog/assets/js/267.7b29ae0b.js"><link rel="prefetch" href="/blog/assets/js/268.0b779b14.js"><link rel="prefetch" href="/blog/assets/js/269.98777552.js"><link rel="prefetch" href="/blog/assets/js/27.fca9f3a9.js"><link rel="prefetch" href="/blog/assets/js/270.c72e8d20.js"><link rel="prefetch" href="/blog/assets/js/271.05ada6ab.js"><link rel="prefetch" href="/blog/assets/js/272.ff30d15e.js"><link rel="prefetch" href="/blog/assets/js/273.7cbb1691.js"><link rel="prefetch" href="/blog/assets/js/274.1ac35ab5.js"><link rel="prefetch" href="/blog/assets/js/275.97b57a76.js"><link rel="prefetch" href="/blog/assets/js/276.3962eac2.js"><link rel="prefetch" href="/blog/assets/js/277.828e1f93.js"><link rel="prefetch" href="/blog/assets/js/278.a50c9ae1.js"><link rel="prefetch" href="/blog/assets/js/279.8e73b3ee.js"><link rel="prefetch" href="/blog/assets/js/28.043c500e.js"><link rel="prefetch" href="/blog/assets/js/280.d692b4c1.js"><link rel="prefetch" href="/blog/assets/js/281.849dd411.js"><link rel="prefetch" href="/blog/assets/js/282.5e938e6a.js"><link rel="prefetch" href="/blog/assets/js/283.c3800a3d.js"><link rel="prefetch" href="/blog/assets/js/284.c7a4b0fd.js"><link rel="prefetch" href="/blog/assets/js/285.64c4a77d.js"><link rel="prefetch" href="/blog/assets/js/286.9618a935.js"><link rel="prefetch" href="/blog/assets/js/287.5a03d00b.js"><link rel="prefetch" href="/blog/assets/js/288.4c813003.js"><link rel="prefetch" href="/blog/assets/js/289.84f87ef0.js"><link rel="prefetch" href="/blog/assets/js/29.c601d74f.js"><link rel="prefetch" href="/blog/assets/js/290.8d82f818.js"><link rel="prefetch" href="/blog/assets/js/291.08d96353.js"><link rel="prefetch" href="/blog/assets/js/292.7cb892ce.js"><link rel="prefetch" href="/blog/assets/js/293.3ccc74bc.js"><link rel="prefetch" href="/blog/assets/js/294.8e43d936.js"><link rel="prefetch" href="/blog/assets/js/295.a1a7ffc2.js"><link rel="prefetch" href="/blog/assets/js/296.51d4765d.js"><link rel="prefetch" href="/blog/assets/js/297.c6a702e7.js"><link rel="prefetch" href="/blog/assets/js/298.d0612426.js"><link rel="prefetch" href="/blog/assets/js/299.ac8850bf.js"><link rel="prefetch" href="/blog/assets/js/30.1b2f9b9e.js"><link rel="prefetch" href="/blog/assets/js/300.7324934e.js"><link rel="prefetch" href="/blog/assets/js/301.00a3d9ec.js"><link rel="prefetch" href="/blog/assets/js/302.b28a2805.js"><link rel="prefetch" href="/blog/assets/js/303.57f637e5.js"><link rel="prefetch" href="/blog/assets/js/304.d0cf168a.js"><link rel="prefetch" href="/blog/assets/js/305.dd83e11e.js"><link rel="prefetch" href="/blog/assets/js/306.aa7cb637.js"><link rel="prefetch" href="/blog/assets/js/307.f333c318.js"><link rel="prefetch" href="/blog/assets/js/308.cad20615.js"><link rel="prefetch" href="/blog/assets/js/309.8d76d78a.js"><link rel="prefetch" href="/blog/assets/js/31.29103327.js"><link rel="prefetch" href="/blog/assets/js/310.49832482.js"><link rel="prefetch" href="/blog/assets/js/311.539133ab.js"><link rel="prefetch" href="/blog/assets/js/312.b746e7aa.js"><link rel="prefetch" href="/blog/assets/js/313.e7deb159.js"><link rel="prefetch" href="/blog/assets/js/314.b415d8ab.js"><link rel="prefetch" href="/blog/assets/js/315.26bde4a5.js"><link rel="prefetch" href="/blog/assets/js/316.2bbb657e.js"><link rel="prefetch" href="/blog/assets/js/317.7a3376d5.js"><link rel="prefetch" href="/blog/assets/js/318.13fa1333.js"><link rel="prefetch" href="/blog/assets/js/319.ac95bada.js"><link rel="prefetch" href="/blog/assets/js/32.0aceee70.js"><link rel="prefetch" href="/blog/assets/js/320.de41512d.js"><link rel="prefetch" href="/blog/assets/js/321.03d1164a.js"><link rel="prefetch" href="/blog/assets/js/322.c76cd099.js"><link rel="prefetch" href="/blog/assets/js/323.cb6b105f.js"><link rel="prefetch" href="/blog/assets/js/324.0ceb3dbf.js"><link rel="prefetch" href="/blog/assets/js/325.a9243022.js"><link rel="prefetch" href="/blog/assets/js/326.fdbc94e6.js"><link rel="prefetch" href="/blog/assets/js/327.a084a500.js"><link rel="prefetch" href="/blog/assets/js/328.74e03c0c.js"><link rel="prefetch" href="/blog/assets/js/329.c2102ba4.js"><link rel="prefetch" href="/blog/assets/js/33.6be872fb.js"><link rel="prefetch" href="/blog/assets/js/330.2a338abc.js"><link rel="prefetch" href="/blog/assets/js/331.889d6368.js"><link rel="prefetch" href="/blog/assets/js/332.de1e6f12.js"><link rel="prefetch" href="/blog/assets/js/333.0140ad94.js"><link rel="prefetch" href="/blog/assets/js/334.8a3eee43.js"><link rel="prefetch" href="/blog/assets/js/335.77640644.js"><link rel="prefetch" href="/blog/assets/js/336.17b669b4.js"><link rel="prefetch" href="/blog/assets/js/337.7f81ab63.js"><link rel="prefetch" href="/blog/assets/js/338.15cad02b.js"><link rel="prefetch" href="/blog/assets/js/339.5e72f676.js"><link rel="prefetch" href="/blog/assets/js/34.4dc0632f.js"><link rel="prefetch" href="/blog/assets/js/340.4c9c729c.js"><link rel="prefetch" href="/blog/assets/js/341.8ff88aee.js"><link rel="prefetch" href="/blog/assets/js/342.0e305ddc.js"><link rel="prefetch" href="/blog/assets/js/343.3c65e348.js"><link rel="prefetch" href="/blog/assets/js/344.04428179.js"><link rel="prefetch" href="/blog/assets/js/345.37760e17.js"><link rel="prefetch" href="/blog/assets/js/346.2e206b3a.js"><link rel="prefetch" href="/blog/assets/js/347.a8814d29.js"><link rel="prefetch" href="/blog/assets/js/348.16038742.js"><link rel="prefetch" href="/blog/assets/js/349.182665c6.js"><link rel="prefetch" href="/blog/assets/js/35.8d0ab014.js"><link rel="prefetch" href="/blog/assets/js/350.d964019a.js"><link rel="prefetch" href="/blog/assets/js/351.76174b8b.js"><link rel="prefetch" href="/blog/assets/js/352.e572ef95.js"><link rel="prefetch" href="/blog/assets/js/353.f1b3fb63.js"><link rel="prefetch" href="/blog/assets/js/354.e91431be.js"><link rel="prefetch" href="/blog/assets/js/355.acf99f6d.js"><link rel="prefetch" href="/blog/assets/js/356.9e2552d8.js"><link rel="prefetch" href="/blog/assets/js/357.c64ac5ab.js"><link rel="prefetch" href="/blog/assets/js/358.04ae6cc3.js"><link rel="prefetch" href="/blog/assets/js/359.0bb69270.js"><link rel="prefetch" href="/blog/assets/js/36.74f2f821.js"><link rel="prefetch" href="/blog/assets/js/360.3733ade7.js"><link rel="prefetch" href="/blog/assets/js/361.d3732079.js"><link rel="prefetch" href="/blog/assets/js/362.dec1ae32.js"><link rel="prefetch" href="/blog/assets/js/363.fcd20588.js"><link rel="prefetch" href="/blog/assets/js/364.d70b94b7.js"><link rel="prefetch" href="/blog/assets/js/365.266ba375.js"><link rel="prefetch" href="/blog/assets/js/366.d31ccf75.js"><link rel="prefetch" href="/blog/assets/js/367.6b791a2e.js"><link rel="prefetch" href="/blog/assets/js/368.93bcebcd.js"><link rel="prefetch" href="/blog/assets/js/369.dee7a1f1.js"><link rel="prefetch" href="/blog/assets/js/37.faa1ca0d.js"><link rel="prefetch" href="/blog/assets/js/370.66d678ee.js"><link rel="prefetch" href="/blog/assets/js/371.c2156da4.js"><link rel="prefetch" href="/blog/assets/js/372.85bbd0e4.js"><link rel="prefetch" href="/blog/assets/js/373.a3ef4912.js"><link rel="prefetch" href="/blog/assets/js/374.8cae1f85.js"><link rel="prefetch" href="/blog/assets/js/375.9f7d2d25.js"><link rel="prefetch" href="/blog/assets/js/376.24263a04.js"><link rel="prefetch" href="/blog/assets/js/377.8bde5a30.js"><link rel="prefetch" href="/blog/assets/js/378.8cc25d81.js"><link rel="prefetch" href="/blog/assets/js/379.b13326d5.js"><link rel="prefetch" href="/blog/assets/js/38.d614c7cf.js"><link rel="prefetch" href="/blog/assets/js/380.421c87d4.js"><link rel="prefetch" href="/blog/assets/js/381.65f907c5.js"><link rel="prefetch" href="/blog/assets/js/382.54fbd09a.js"><link rel="prefetch" href="/blog/assets/js/383.100790bb.js"><link rel="prefetch" href="/blog/assets/js/384.cf8cd37d.js"><link rel="prefetch" href="/blog/assets/js/385.d8c92947.js"><link rel="prefetch" href="/blog/assets/js/386.19ded324.js"><link rel="prefetch" href="/blog/assets/js/387.505aed25.js"><link rel="prefetch" href="/blog/assets/js/388.7d1c0c60.js"><link rel="prefetch" href="/blog/assets/js/389.3960b8af.js"><link rel="prefetch" href="/blog/assets/js/39.45ee7def.js"><link rel="prefetch" href="/blog/assets/js/390.44abd469.js"><link rel="prefetch" href="/blog/assets/js/391.b1839d56.js"><link rel="prefetch" href="/blog/assets/js/392.ae7eaff5.js"><link rel="prefetch" href="/blog/assets/js/393.1cf6e279.js"><link rel="prefetch" href="/blog/assets/js/394.5e66fa1c.js"><link rel="prefetch" href="/blog/assets/js/395.0cea311f.js"><link rel="prefetch" href="/blog/assets/js/396.4e37636c.js"><link rel="prefetch" href="/blog/assets/js/397.a17ca0cf.js"><link rel="prefetch" href="/blog/assets/js/398.1fbda1c6.js"><link rel="prefetch" href="/blog/assets/js/399.2defb76c.js"><link rel="prefetch" href="/blog/assets/js/40.2e2b5844.js"><link rel="prefetch" href="/blog/assets/js/400.f67dd9fb.js"><link rel="prefetch" href="/blog/assets/js/401.e58b54ed.js"><link rel="prefetch" href="/blog/assets/js/402.07b58b1d.js"><link rel="prefetch" href="/blog/assets/js/403.f85b8362.js"><link rel="prefetch" href="/blog/assets/js/404.df676c4f.js"><link rel="prefetch" href="/blog/assets/js/405.5ebd626a.js"><link rel="prefetch" href="/blog/assets/js/406.d3b7bf38.js"><link rel="prefetch" href="/blog/assets/js/407.1dc970e8.js"><link rel="prefetch" href="/blog/assets/js/408.859767ed.js"><link rel="prefetch" href="/blog/assets/js/409.7c302b99.js"><link rel="prefetch" href="/blog/assets/js/41.6b91ab90.js"><link rel="prefetch" href="/blog/assets/js/410.c0a4f41f.js"><link rel="prefetch" href="/blog/assets/js/411.66a38c6d.js"><link rel="prefetch" href="/blog/assets/js/412.8f5593ca.js"><link rel="prefetch" href="/blog/assets/js/413.17dd5627.js"><link rel="prefetch" href="/blog/assets/js/414.a94442fc.js"><link rel="prefetch" href="/blog/assets/js/415.7b18ba4c.js"><link rel="prefetch" href="/blog/assets/js/416.80e907d8.js"><link rel="prefetch" href="/blog/assets/js/417.9f9169d1.js"><link rel="prefetch" href="/blog/assets/js/418.15af9be4.js"><link rel="prefetch" href="/blog/assets/js/419.bc894cfe.js"><link rel="prefetch" href="/blog/assets/js/42.d5abf87a.js"><link rel="prefetch" href="/blog/assets/js/420.7b02baac.js"><link rel="prefetch" href="/blog/assets/js/421.f7d7b157.js"><link rel="prefetch" href="/blog/assets/js/422.4daf39d7.js"><link rel="prefetch" href="/blog/assets/js/423.0c87ba8b.js"><link rel="prefetch" href="/blog/assets/js/424.9d82d2a6.js"><link rel="prefetch" href="/blog/assets/js/425.5f6d9cef.js"><link rel="prefetch" href="/blog/assets/js/426.09d657cc.js"><link rel="prefetch" href="/blog/assets/js/427.987a56de.js"><link rel="prefetch" href="/blog/assets/js/428.69b892cf.js"><link rel="prefetch" href="/blog/assets/js/429.4839f0b3.js"><link rel="prefetch" href="/blog/assets/js/43.f1e9b196.js"><link rel="prefetch" href="/blog/assets/js/430.a8ce3cc6.js"><link rel="prefetch" href="/blog/assets/js/431.27ca7e4a.js"><link rel="prefetch" href="/blog/assets/js/432.56d2239f.js"><link rel="prefetch" href="/blog/assets/js/433.b4dc39b1.js"><link rel="prefetch" href="/blog/assets/js/434.289a374e.js"><link rel="prefetch" href="/blog/assets/js/435.711bd609.js"><link rel="prefetch" href="/blog/assets/js/436.63bb589c.js"><link rel="prefetch" href="/blog/assets/js/437.1f6cfa28.js"><link rel="prefetch" href="/blog/assets/js/438.ef85913c.js"><link rel="prefetch" href="/blog/assets/js/439.f2695d5a.js"><link rel="prefetch" href="/blog/assets/js/44.acc33260.js"><link rel="prefetch" href="/blog/assets/js/440.bb255fde.js"><link rel="prefetch" href="/blog/assets/js/441.2eead3d6.js"><link rel="prefetch" href="/blog/assets/js/442.99931a15.js"><link rel="prefetch" href="/blog/assets/js/443.572c57f2.js"><link rel="prefetch" href="/blog/assets/js/444.e215b915.js"><link rel="prefetch" href="/blog/assets/js/445.3c52a1af.js"><link rel="prefetch" href="/blog/assets/js/446.754a00bf.js"><link rel="prefetch" href="/blog/assets/js/447.f860d8d4.js"><link rel="prefetch" href="/blog/assets/js/448.4e923132.js"><link rel="prefetch" href="/blog/assets/js/449.badff0a4.js"><link rel="prefetch" href="/blog/assets/js/45.37dc8c45.js"><link rel="prefetch" href="/blog/assets/js/450.e659df73.js"><link rel="prefetch" href="/blog/assets/js/451.296d609c.js"><link rel="prefetch" href="/blog/assets/js/452.8b2294eb.js"><link rel="prefetch" href="/blog/assets/js/453.1acb93c3.js"><link rel="prefetch" href="/blog/assets/js/454.d8a48c96.js"><link rel="prefetch" href="/blog/assets/js/455.4baedbaf.js"><link rel="prefetch" href="/blog/assets/js/456.4ba3c289.js"><link rel="prefetch" href="/blog/assets/js/457.c046dcfd.js"><link rel="prefetch" href="/blog/assets/js/458.bf6231a3.js"><link rel="prefetch" href="/blog/assets/js/459.ebf50dd7.js"><link rel="prefetch" href="/blog/assets/js/46.fab70621.js"><link rel="prefetch" href="/blog/assets/js/460.b974a1ba.js"><link rel="prefetch" href="/blog/assets/js/461.07e444df.js"><link rel="prefetch" href="/blog/assets/js/462.1da9cbab.js"><link rel="prefetch" href="/blog/assets/js/463.ec3da0f2.js"><link rel="prefetch" href="/blog/assets/js/464.5bb6e8a7.js"><link rel="prefetch" href="/blog/assets/js/465.ae1a505a.js"><link rel="prefetch" href="/blog/assets/js/466.1848bcb3.js"><link rel="prefetch" href="/blog/assets/js/467.5822724d.js"><link rel="prefetch" href="/blog/assets/js/468.eecd2821.js"><link rel="prefetch" href="/blog/assets/js/469.83f63214.js"><link rel="prefetch" href="/blog/assets/js/47.9f2db442.js"><link rel="prefetch" href="/blog/assets/js/470.3b070d80.js"><link rel="prefetch" href="/blog/assets/js/471.d57939be.js"><link rel="prefetch" href="/blog/assets/js/472.39da522d.js"><link rel="prefetch" href="/blog/assets/js/473.91cc82ae.js"><link rel="prefetch" href="/blog/assets/js/474.7f3a2c83.js"><link rel="prefetch" href="/blog/assets/js/475.cdeff64a.js"><link rel="prefetch" href="/blog/assets/js/476.f4eb6b7e.js"><link rel="prefetch" href="/blog/assets/js/477.a34e8638.js"><link rel="prefetch" href="/blog/assets/js/478.cee1cac3.js"><link rel="prefetch" href="/blog/assets/js/479.457a4687.js"><link rel="prefetch" href="/blog/assets/js/48.03f2a039.js"><link rel="prefetch" href="/blog/assets/js/480.42299c22.js"><link rel="prefetch" href="/blog/assets/js/481.fbf8e8bd.js"><link rel="prefetch" href="/blog/assets/js/482.47803f3a.js"><link rel="prefetch" href="/blog/assets/js/483.f650aba9.js"><link rel="prefetch" href="/blog/assets/js/484.1fcf4c3a.js"><link rel="prefetch" href="/blog/assets/js/485.eb35cde9.js"><link rel="prefetch" href="/blog/assets/js/486.799fca2d.js"><link rel="prefetch" href="/blog/assets/js/487.fe03dd5c.js"><link rel="prefetch" href="/blog/assets/js/488.94560e41.js"><link rel="prefetch" href="/blog/assets/js/489.7c687f3b.js"><link rel="prefetch" href="/blog/assets/js/49.768466d6.js"><link rel="prefetch" href="/blog/assets/js/490.90d91b5f.js"><link rel="prefetch" href="/blog/assets/js/491.613b51f2.js"><link rel="prefetch" href="/blog/assets/js/492.bff5eb71.js"><link rel="prefetch" href="/blog/assets/js/493.fc4b67ff.js"><link rel="prefetch" href="/blog/assets/js/494.164bb37d.js"><link rel="prefetch" href="/blog/assets/js/495.479243ac.js"><link rel="prefetch" href="/blog/assets/js/496.bb42d73a.js"><link rel="prefetch" href="/blog/assets/js/497.a0fe7bd7.js"><link rel="prefetch" href="/blog/assets/js/498.aabf75e7.js"><link rel="prefetch" href="/blog/assets/js/499.bd5581d2.js"><link rel="prefetch" href="/blog/assets/js/50.a00bccc8.js"><link rel="prefetch" href="/blog/assets/js/500.fe901bb9.js"><link rel="prefetch" href="/blog/assets/js/501.63ea0dfe.js"><link rel="prefetch" href="/blog/assets/js/502.b41aec90.js"><link rel="prefetch" href="/blog/assets/js/503.80332bc0.js"><link rel="prefetch" href="/blog/assets/js/504.4f37be26.js"><link rel="prefetch" href="/blog/assets/js/505.6c46fd8d.js"><link rel="prefetch" href="/blog/assets/js/506.d569590e.js"><link rel="prefetch" href="/blog/assets/js/507.462998f3.js"><link rel="prefetch" href="/blog/assets/js/508.2ab21593.js"><link rel="prefetch" href="/blog/assets/js/509.15ed1624.js"><link rel="prefetch" href="/blog/assets/js/51.23cecfca.js"><link rel="prefetch" href="/blog/assets/js/510.5cfb72a0.js"><link rel="prefetch" href="/blog/assets/js/511.252b3ee7.js"><link rel="prefetch" href="/blog/assets/js/512.d5da9fae.js"><link rel="prefetch" href="/blog/assets/js/513.e68db428.js"><link rel="prefetch" href="/blog/assets/js/514.868a729d.js"><link rel="prefetch" href="/blog/assets/js/515.ca4d06d6.js"><link rel="prefetch" href="/blog/assets/js/516.89e640d7.js"><link rel="prefetch" href="/blog/assets/js/517.2ff52e8e.js"><link rel="prefetch" href="/blog/assets/js/518.1ab2767d.js"><link rel="prefetch" href="/blog/assets/js/519.b85c0742.js"><link rel="prefetch" href="/blog/assets/js/52.d845d76b.js"><link rel="prefetch" href="/blog/assets/js/520.7f6a761e.js"><link rel="prefetch" href="/blog/assets/js/521.ed821353.js"><link rel="prefetch" href="/blog/assets/js/522.c02e2180.js"><link rel="prefetch" href="/blog/assets/js/523.c600b4bf.js"><link rel="prefetch" href="/blog/assets/js/524.a4920ad9.js"><link rel="prefetch" href="/blog/assets/js/525.3430abc7.js"><link rel="prefetch" href="/blog/assets/js/526.95a29004.js"><link rel="prefetch" href="/blog/assets/js/527.3107662c.js"><link rel="prefetch" href="/blog/assets/js/528.592ca80a.js"><link rel="prefetch" href="/blog/assets/js/529.6706ec25.js"><link rel="prefetch" href="/blog/assets/js/53.1eb54397.js"><link rel="prefetch" href="/blog/assets/js/530.858c2867.js"><link rel="prefetch" href="/blog/assets/js/531.8cb84ec5.js"><link rel="prefetch" href="/blog/assets/js/532.be04855e.js"><link rel="prefetch" href="/blog/assets/js/533.41629769.js"><link rel="prefetch" href="/blog/assets/js/534.81cdf53a.js"><link rel="prefetch" href="/blog/assets/js/535.6478c9bb.js"><link rel="prefetch" href="/blog/assets/js/536.bc08f19f.js"><link rel="prefetch" href="/blog/assets/js/537.4c38d2fd.js"><link rel="prefetch" href="/blog/assets/js/538.55f973f4.js"><link rel="prefetch" href="/blog/assets/js/539.c660669a.js"><link rel="prefetch" href="/blog/assets/js/54.a6aaad6e.js"><link rel="prefetch" href="/blog/assets/js/540.88f8486e.js"><link rel="prefetch" href="/blog/assets/js/541.10e91d7d.js"><link rel="prefetch" href="/blog/assets/js/542.e592349a.js"><link rel="prefetch" href="/blog/assets/js/543.e6f7f828.js"><link rel="prefetch" href="/blog/assets/js/544.62cc95cb.js"><link rel="prefetch" href="/blog/assets/js/545.54724898.js"><link rel="prefetch" href="/blog/assets/js/546.b4187ebb.js"><link rel="prefetch" href="/blog/assets/js/547.706b42b5.js"><link rel="prefetch" href="/blog/assets/js/548.001a9964.js"><link rel="prefetch" href="/blog/assets/js/549.612ee179.js"><link rel="prefetch" href="/blog/assets/js/55.32a9d5cc.js"><link rel="prefetch" href="/blog/assets/js/550.d0e88aa2.js"><link rel="prefetch" href="/blog/assets/js/551.33a0e6af.js"><link rel="prefetch" href="/blog/assets/js/552.bbd48900.js"><link rel="prefetch" href="/blog/assets/js/553.c4c7aab3.js"><link rel="prefetch" href="/blog/assets/js/554.77b63858.js"><link rel="prefetch" href="/blog/assets/js/555.3f334fd8.js"><link rel="prefetch" href="/blog/assets/js/556.ad9416a4.js"><link rel="prefetch" href="/blog/assets/js/557.13428729.js"><link rel="prefetch" href="/blog/assets/js/558.b94cbe92.js"><link rel="prefetch" href="/blog/assets/js/559.49bf9521.js"><link rel="prefetch" href="/blog/assets/js/56.a478ec1c.js"><link rel="prefetch" href="/blog/assets/js/560.089fb42e.js"><link rel="prefetch" href="/blog/assets/js/561.75642f3c.js"><link rel="prefetch" href="/blog/assets/js/562.62296e85.js"><link rel="prefetch" href="/blog/assets/js/563.e4676539.js"><link rel="prefetch" href="/blog/assets/js/564.a76356c3.js"><link rel="prefetch" href="/blog/assets/js/565.d60ff4f4.js"><link rel="prefetch" href="/blog/assets/js/566.ba3dccd4.js"><link rel="prefetch" href="/blog/assets/js/567.784d2497.js"><link rel="prefetch" href="/blog/assets/js/568.63f2b079.js"><link rel="prefetch" href="/blog/assets/js/569.ce284159.js"><link rel="prefetch" href="/blog/assets/js/57.4a46e3c2.js"><link rel="prefetch" href="/blog/assets/js/570.fdcdfc2a.js"><link rel="prefetch" href="/blog/assets/js/571.c71a7b6d.js"><link rel="prefetch" href="/blog/assets/js/572.13e8b6a8.js"><link rel="prefetch" href="/blog/assets/js/573.5782494a.js"><link rel="prefetch" href="/blog/assets/js/574.9a68b0c0.js"><link rel="prefetch" href="/blog/assets/js/575.be735230.js"><link rel="prefetch" href="/blog/assets/js/576.13053365.js"><link rel="prefetch" href="/blog/assets/js/577.bbb2f55a.js"><link rel="prefetch" href="/blog/assets/js/578.9350bf3c.js"><link rel="prefetch" href="/blog/assets/js/579.370c7761.js"><link rel="prefetch" href="/blog/assets/js/58.20ba4463.js"><link rel="prefetch" href="/blog/assets/js/580.9cc0a55d.js"><link rel="prefetch" href="/blog/assets/js/581.b165f783.js"><link rel="prefetch" href="/blog/assets/js/582.1b94f275.js"><link rel="prefetch" href="/blog/assets/js/583.4c66c783.js"><link rel="prefetch" href="/blog/assets/js/584.c2bbb351.js"><link rel="prefetch" href="/blog/assets/js/585.d13069cd.js"><link rel="prefetch" href="/blog/assets/js/586.02fe90bf.js"><link rel="prefetch" href="/blog/assets/js/587.1dbb509f.js"><link rel="prefetch" href="/blog/assets/js/588.0e54b2b4.js"><link rel="prefetch" href="/blog/assets/js/589.82725bdd.js"><link rel="prefetch" href="/blog/assets/js/59.4e5d1720.js"><link rel="prefetch" href="/blog/assets/js/590.4824b715.js"><link rel="prefetch" href="/blog/assets/js/591.c76ed528.js"><link rel="prefetch" href="/blog/assets/js/592.b8424f77.js"><link rel="prefetch" href="/blog/assets/js/593.a4157dec.js"><link rel="prefetch" href="/blog/assets/js/594.ad8ff24e.js"><link rel="prefetch" href="/blog/assets/js/595.41bf3b22.js"><link rel="prefetch" href="/blog/assets/js/596.9be26a68.js"><link rel="prefetch" href="/blog/assets/js/597.9c902ea1.js"><link rel="prefetch" href="/blog/assets/js/598.88ad931d.js"><link rel="prefetch" href="/blog/assets/js/599.ccd78ecb.js"><link rel="prefetch" href="/blog/assets/js/6.d1fbc933.js"><link rel="prefetch" href="/blog/assets/js/60.8d3415b6.js"><link rel="prefetch" href="/blog/assets/js/600.f3af6ceb.js"><link rel="prefetch" href="/blog/assets/js/601.dd333221.js"><link rel="prefetch" href="/blog/assets/js/602.e4aa3dad.js"><link rel="prefetch" href="/blog/assets/js/603.a8be50d3.js"><link rel="prefetch" href="/blog/assets/js/604.553f19d2.js"><link rel="prefetch" href="/blog/assets/js/605.b4513d75.js"><link rel="prefetch" href="/blog/assets/js/606.8c8909b4.js"><link rel="prefetch" href="/blog/assets/js/607.e0ce9bd7.js"><link rel="prefetch" href="/blog/assets/js/608.b117c693.js"><link rel="prefetch" href="/blog/assets/js/609.7549c5e8.js"><link rel="prefetch" href="/blog/assets/js/61.05a1df15.js"><link rel="prefetch" href="/blog/assets/js/610.a39acd2b.js"><link rel="prefetch" href="/blog/assets/js/611.91c86e8e.js"><link rel="prefetch" href="/blog/assets/js/612.d83fad45.js"><link rel="prefetch" href="/blog/assets/js/613.3e921137.js"><link rel="prefetch" href="/blog/assets/js/614.0d67cef6.js"><link rel="prefetch" href="/blog/assets/js/615.dc552b8e.js"><link rel="prefetch" href="/blog/assets/js/616.403cafea.js"><link rel="prefetch" href="/blog/assets/js/617.667d9686.js"><link rel="prefetch" href="/blog/assets/js/618.5192c40e.js"><link rel="prefetch" href="/blog/assets/js/619.87365b09.js"><link rel="prefetch" href="/blog/assets/js/62.6624e596.js"><link rel="prefetch" href="/blog/assets/js/620.8f05c67e.js"><link rel="prefetch" href="/blog/assets/js/621.9957360b.js"><link rel="prefetch" href="/blog/assets/js/622.66b82ca2.js"><link rel="prefetch" href="/blog/assets/js/623.7da42653.js"><link rel="prefetch" href="/blog/assets/js/624.053968eb.js"><link rel="prefetch" href="/blog/assets/js/625.e7f1a716.js"><link rel="prefetch" href="/blog/assets/js/626.8ef36d74.js"><link rel="prefetch" href="/blog/assets/js/627.9a4cbe33.js"><link rel="prefetch" href="/blog/assets/js/628.7246474e.js"><link rel="prefetch" href="/blog/assets/js/629.13ca2df9.js"><link rel="prefetch" href="/blog/assets/js/63.791ff0bc.js"><link rel="prefetch" href="/blog/assets/js/630.06e3a488.js"><link rel="prefetch" href="/blog/assets/js/631.da24e56c.js"><link rel="prefetch" href="/blog/assets/js/632.c3ca43ea.js"><link rel="prefetch" href="/blog/assets/js/633.ce66b623.js"><link rel="prefetch" href="/blog/assets/js/634.cab8b7d6.js"><link rel="prefetch" href="/blog/assets/js/635.df106bec.js"><link rel="prefetch" href="/blog/assets/js/636.e92175d3.js"><link rel="prefetch" href="/blog/assets/js/637.0d87784a.js"><link rel="prefetch" href="/blog/assets/js/638.736e4c9b.js"><link rel="prefetch" href="/blog/assets/js/639.c11dd78c.js"><link rel="prefetch" href="/blog/assets/js/64.198419ad.js"><link rel="prefetch" href="/blog/assets/js/640.5c9b870e.js"><link rel="prefetch" href="/blog/assets/js/641.cfcc6bd4.js"><link rel="prefetch" href="/blog/assets/js/642.81af9406.js"><link rel="prefetch" href="/blog/assets/js/643.07f3139a.js"><link rel="prefetch" href="/blog/assets/js/644.e928332e.js"><link rel="prefetch" href="/blog/assets/js/645.d2c59de1.js"><link rel="prefetch" href="/blog/assets/js/646.dbc475c6.js"><link rel="prefetch" href="/blog/assets/js/647.c821904d.js"><link rel="prefetch" href="/blog/assets/js/648.54bae58c.js"><link rel="prefetch" href="/blog/assets/js/649.c97e42bb.js"><link rel="prefetch" href="/blog/assets/js/65.45158f93.js"><link rel="prefetch" href="/blog/assets/js/650.a0b4fd7c.js"><link rel="prefetch" href="/blog/assets/js/651.1331b06f.js"><link rel="prefetch" href="/blog/assets/js/652.863004d7.js"><link rel="prefetch" href="/blog/assets/js/653.6c5853e9.js"><link rel="prefetch" href="/blog/assets/js/654.42de2bcc.js"><link rel="prefetch" href="/blog/assets/js/655.f29dcf51.js"><link rel="prefetch" href="/blog/assets/js/656.dfba5bce.js"><link rel="prefetch" href="/blog/assets/js/657.5da2263c.js"><link rel="prefetch" href="/blog/assets/js/658.1874c3b9.js"><link rel="prefetch" href="/blog/assets/js/659.3e3e3f7e.js"><link rel="prefetch" href="/blog/assets/js/66.5fbccb10.js"><link rel="prefetch" href="/blog/assets/js/660.b179eb1b.js"><link rel="prefetch" href="/blog/assets/js/661.bb24c6c2.js"><link rel="prefetch" href="/blog/assets/js/662.64bd8a7d.js"><link rel="prefetch" href="/blog/assets/js/663.3fbf6b50.js"><link rel="prefetch" href="/blog/assets/js/664.f01d561a.js"><link rel="prefetch" href="/blog/assets/js/665.5e38d95b.js"><link rel="prefetch" href="/blog/assets/js/666.19817923.js"><link rel="prefetch" href="/blog/assets/js/667.a0d11ce7.js"><link rel="prefetch" href="/blog/assets/js/67.7a0adae9.js"><link rel="prefetch" href="/blog/assets/js/68.31986a91.js"><link rel="prefetch" href="/blog/assets/js/69.7e244b52.js"><link rel="prefetch" href="/blog/assets/js/7.62e67a94.js"><link rel="prefetch" href="/blog/assets/js/70.42a83eac.js"><link rel="prefetch" href="/blog/assets/js/71.b05a7a54.js"><link rel="prefetch" href="/blog/assets/js/72.9c9682fc.js"><link rel="prefetch" href="/blog/assets/js/73.2403c763.js"><link rel="prefetch" href="/blog/assets/js/74.c3b74039.js"><link rel="prefetch" href="/blog/assets/js/75.b6ec9378.js"><link rel="prefetch" href="/blog/assets/js/76.311bd477.js"><link rel="prefetch" href="/blog/assets/js/77.3d6f2010.js"><link rel="prefetch" href="/blog/assets/js/78.2e08dc05.js"><link rel="prefetch" href="/blog/assets/js/79.0ebf10d0.js"><link rel="prefetch" href="/blog/assets/js/8.81590624.js"><link rel="prefetch" href="/blog/assets/js/80.76fa3bc0.js"><link rel="prefetch" href="/blog/assets/js/81.e8e9daeb.js"><link rel="prefetch" href="/blog/assets/js/82.04114584.js"><link rel="prefetch" href="/blog/assets/js/83.c0b1e644.js"><link rel="prefetch" href="/blog/assets/js/84.108d3a8c.js"><link rel="prefetch" href="/blog/assets/js/85.ed1b628d.js"><link rel="prefetch" href="/blog/assets/js/86.841df867.js"><link rel="prefetch" href="/blog/assets/js/87.7b47e6dc.js"><link rel="prefetch" href="/blog/assets/js/88.b9be664a.js"><link rel="prefetch" href="/blog/assets/js/89.2642d6a1.js"><link rel="prefetch" href="/blog/assets/js/9.35c9aeaf.js"><link rel="prefetch" href="/blog/assets/js/90.5c26cd21.js"><link rel="prefetch" href="/blog/assets/js/91.344d56ed.js"><link rel="prefetch" href="/blog/assets/js/92.1dd8beb3.js"><link rel="prefetch" href="/blog/assets/js/93.119c5e26.js"><link rel="prefetch" href="/blog/assets/js/94.3a618b08.js"><link rel="prefetch" href="/blog/assets/js/95.df02cd52.js"><link rel="prefetch" href="/blog/assets/js/96.44bb862a.js"><link rel="prefetch" href="/blog/assets/js/97.11755d47.js"><link rel="prefetch" href="/blog/assets/js/98.3bbc957f.js"><link rel="prefetch" href="/blog/assets/js/99.6d66a49b.js">
+    <link rel="stylesheet" href="/blog/assets/css/0.styles.82214e06.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/blog/" class="home-link router-link-active"><!----> <span class="site-name">zmx的前端日志</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/blog/" class="nav-link">Home</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="学习笔记" class="dropdown-title"><span class="title">学习笔记</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blog/pages/note/front-review/" class="nav-link">前端知识回顾</a></li><li class="dropdown-item"><h4>javascript语言新发展</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/blog/pages/note/js-development/js-ready/" class="nav-link">ready</a></li><li class="dropdown-subitem"><a href="/blog/pages/note/js-development/js-note/" class="nav-link">笔记</a></li></ul></li><li class="dropdown-item"><h4>微信小程序</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/blog/pages/note/wechat-applet/" class="nav-link">微信小程序</a></li></ul></li><li class="dropdown-item"><h4>大话NodeJS72般变化</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/blog/pages/note/talk-node/talk-node-ready/" class="nav-link">ready</a></li><li class="dropdown-subitem"><a href="/blog/pages/note/talk-node/talk-node-note/" class="nav-link">笔记</a></li></ul></li><li class="dropdown-item"><h4>前端工程化</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/blog/pages/note/front-engineering/front-engineering-ready/" class="nav-link">ready</a></li><li class="dropdown-subitem"><a href="/blog/pages/note/front-engineering/front-engineering-note/" class="nav-link">笔记</a></li></ul></li><li class="dropdown-item"><h4>前端性能优化与工程化</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/blog/pages/note/front-performance/front-performance-ready/" class="nav-link">ready</a></li><li class="dropdown-subitem"><a href="/blog/pages/note/front-performance/front-performance-note/" class="nav-link">笔记</a></li></ul></li><li class="dropdown-item"><h4>CSS古话今说与网站重构</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/blog/pages/note/css-advanced/css-advanced-ready/" class="nav-link">ready</a></li><li class="dropdown-subitem"><a href="/blog/pages/note/css-advanced/css-advanced-note/" class="nav-link">笔记</a></li></ul></li><li class="dropdown-item"><h4>MVC、MVVM框架那些事</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/blog/pages/note/front-frame/front-frame-ready/" class="nav-link">ready</a></li><li class="dropdown-subitem"><a href="/blog/pages/note/front-frame/front-frame-note/" class="nav-link">笔记</a></li></ul></li><li class="dropdown-item"><h4>flutter</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/blog/pages/note/flutter/" class="nav-link">flutter笔记</a></li></ul></li><li class="dropdown-item"><h4>uniapp</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/blog/pages/note/uniapp/" class="nav-link">uniapp笔记</a></li></ul></li><li class="dropdown-item"><h4>前端跨界AI、IOS、PC、Android、IOT</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/blog/pages/note/front-crossover/front-crossover-ready/" class="nav-link">ready</a></li><li class="dropdown-subitem"><a href="/blog/pages/note/front-crossover/front-crossover-note/" class="nav-link">笔记</a></li></ul></li><li class="dropdown-item"><h4>Python</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/blog/pages/note/python/" class="nav-link">走进Python的世界</a></li></ul></li><li class="dropdown-item"><h4>数据结构与算法JavaScript实践</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/blog/pages/note/data-structure/data-structure-ready/" class="nav-link">ready</a></li><li class="dropdown-subitem"><a href="/blog/pages/note/data-structure/data-structure-note/" class="nav-link">笔记</a></li></ul></li><li class="dropdown-item"><h4>JavaScript图形学和H5游戏</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/blog/pages/note/front-graphics/front-graphics-ready/" class="nav-link">ready</a></li><li class="dropdown-subitem"><a href="/blog/pages/note/front-graphics/front-graphics-note/" class="nav-link">笔记</a></li></ul></li><li class="dropdown-item"><h4>设计模式与网络安全专场</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/blog/pages/note/front-hacker/front-hacker-ready/" class="nav-link">ready</a></li><li class="dropdown-subitem"><a href="/blog/pages/note/front-hacker/front-hacker-note/" class="nav-link">笔记</a></li></ul></li></ul></div></div><div class="nav-item"><a href="/blog/pages/interview/interview-one-side-3.html" class="nav-link">面试题</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="算法" class="dropdown-title"><span class="title">算法</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blog/pages/algorithm/leet-code/" class="nav-link">LeetCode</a></li><li class="dropdown-item"><!----> <a href="/blog/pages/algorithm/other/" class="nav-link">其他</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="积累" class="dropdown-title"><span class="title">积累</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blog/pages/accumulation/front/" class="nav-link">前端</a></li><li class="dropdown-item"><!----> <a href="/blog/pages/accumulation/back/" class="nav-link">后端</a></li><li class="dropdown-item"><!----> <a href="/blog/pages/accumulation/other/" class="nav-link">其他</a></li></ul></div></div> <a href="https://github.com/zmx2321/blog" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/blog/" class="nav-link">Home</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="学习笔记" class="dropdown-title"><span class="title">学习笔记</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blog/pages/note/front-review/" class="nav-link">前端知识回顾</a></li><li class="dropdown-item"><h4>javascript语言新发展</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/blog/pages/note/js-development/js-ready/" class="nav-link">ready</a></li><li class="dropdown-subitem"><a href="/blog/pages/note/js-development/js-note/" class="nav-link">笔记</a></li></ul></li><li class="dropdown-item"><h4>微信小程序</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/blog/pages/note/wechat-applet/" class="nav-link">微信小程序</a></li></ul></li><li class="dropdown-item"><h4>大话NodeJS72般变化</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/blog/pages/note/talk-node/talk-node-ready/" class="nav-link">ready</a></li><li class="dropdown-subitem"><a href="/blog/pages/note/talk-node/talk-node-note/" class="nav-link">笔记</a></li></ul></li><li class="dropdown-item"><h4>前端工程化</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/blog/pages/note/front-engineering/front-engineering-ready/" class="nav-link">ready</a></li><li class="dropdown-subitem"><a href="/blog/pages/note/front-engineering/front-engineering-note/" class="nav-link">笔记</a></li></ul></li><li class="dropdown-item"><h4>前端性能优化与工程化</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/blog/pages/note/front-performance/front-performance-ready/" class="nav-link">ready</a></li><li class="dropdown-subitem"><a href="/blog/pages/note/front-performance/front-performance-note/" class="nav-link">笔记</a></li></ul></li><li class="dropdown-item"><h4>CSS古话今说与网站重构</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/blog/pages/note/css-advanced/css-advanced-ready/" class="nav-link">ready</a></li><li class="dropdown-subitem"><a href="/blog/pages/note/css-advanced/css-advanced-note/" class="nav-link">笔记</a></li></ul></li><li class="dropdown-item"><h4>MVC、MVVM框架那些事</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/blog/pages/note/front-frame/front-frame-ready/" class="nav-link">ready</a></li><li class="dropdown-subitem"><a href="/blog/pages/note/front-frame/front-frame-note/" class="nav-link">笔记</a></li></ul></li><li class="dropdown-item"><h4>flutter</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/blog/pages/note/flutter/" class="nav-link">flutter笔记</a></li></ul></li><li class="dropdown-item"><h4>uniapp</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/blog/pages/note/uniapp/" class="nav-link">uniapp笔记</a></li></ul></li><li class="dropdown-item"><h4>前端跨界AI、IOS、PC、Android、IOT</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/blog/pages/note/front-crossover/front-crossover-ready/" class="nav-link">ready</a></li><li class="dropdown-subitem"><a href="/blog/pages/note/front-crossover/front-crossover-note/" class="nav-link">笔记</a></li></ul></li><li class="dropdown-item"><h4>Python</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/blog/pages/note/python/" class="nav-link">走进Python的世界</a></li></ul></li><li class="dropdown-item"><h4>数据结构与算法JavaScript实践</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/blog/pages/note/data-structure/data-structure-ready/" class="nav-link">ready</a></li><li class="dropdown-subitem"><a href="/blog/pages/note/data-structure/data-structure-note/" class="nav-link">笔记</a></li></ul></li><li class="dropdown-item"><h4>JavaScript图形学和H5游戏</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/blog/pages/note/front-graphics/front-graphics-ready/" class="nav-link">ready</a></li><li class="dropdown-subitem"><a href="/blog/pages/note/front-graphics/front-graphics-note/" class="nav-link">笔记</a></li></ul></li><li class="dropdown-item"><h4>设计模式与网络安全专场</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/blog/pages/note/front-hacker/front-hacker-ready/" class="nav-link">ready</a></li><li class="dropdown-subitem"><a href="/blog/pages/note/front-hacker/front-hacker-note/" class="nav-link">笔记</a></li></ul></li></ul></div></div><div class="nav-item"><a href="/blog/pages/interview/interview-one-side-3.html" class="nav-link">面试题</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="算法" class="dropdown-title"><span class="title">算法</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blog/pages/algorithm/leet-code/" class="nav-link">LeetCode</a></li><li class="dropdown-item"><!----> <a href="/blog/pages/algorithm/other/" class="nav-link">其他</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="积累" class="dropdown-title"><span class="title">积累</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blog/pages/accumulation/front/" class="nav-link">前端</a></li><li class="dropdown-item"><!----> <a href="/blog/pages/accumulation/back/" class="nav-link">后端</a></li><li class="dropdown-item"><!----> <a href="/blog/pages/accumulation/other/" class="nav-link">其他</a></li></ul></div></div> <a href="https://github.com/zmx2321/blog" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></nav>  <ul class="sidebar-links"><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading open"><span>基础面试题</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/blog/pages/interview/interview-base-1.html" aria-current="page" class="active sidebar-link">JavaScript核心知识</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/blog/pages/interview/interview-base-2.html" class="sidebar-link">基础面试题汇总</a></li><li><a href="/blog/pages/interview/interview-base-3.html" class="sidebar-link">前端经典面试题汇总</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>一面训练</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/blog/pages/interview/interview-one-side-1.html" class="sidebar-link">说说面试的那些事儿</a></li><li><a href="/blog/pages/interview/interview-one-side-2.html" class="sidebar-link">面试前的准备</a></li><li><a href="/blog/pages/interview/interview-one-side-3.html" class="sidebar-link">CSS 面试题</a></li><li><a href="/blog/pages/interview/interview-one-side-4.html" class="sidebar-link">JS基础-变量类型和计算</a></li><li><a href="/blog/pages/interview/interview-one-side-5.html" class="sidebar-link">JS基础-原型和原型链(必考)</a></li><li><a href="/blog/pages/interview/interview-one-side-6.html" class="sidebar-link">JS基础-作用域和闭包(必考)</a></li><li><a href="/blog/pages/interview/interview-one-side-7.html" class="sidebar-link">JS基础-异步和单线程(必考)</a></li><li><a href="/blog/pages/interview/interview-one-side-8.html" class="sidebar-link">JS 异步进阶(大厂)</a></li><li><a href="/blog/pages/interview/interview-one-side-9.html" class="sidebar-link">JS-Web-API-DOM</a></li><li><a href="/blog/pages/interview/interview-one-side-10.html" class="sidebar-link">JS-Web-API-BOM</a></li><li><a href="/blog/pages/interview/interview-one-side-11.html" class="sidebar-link">JS-Web-API-事件(必考)</a></li><li><a href="/blog/pages/interview/interview-one-side-12.html" class="sidebar-link">JS-Web-API-Ajax</a></li><li><a href="/blog/pages/interview/interview-one-side-13.html" class="sidebar-link">JS-Web-API-存储</a></li><li><a href="/blog/pages/interview/interview-one-side-14.html" class="sidebar-link">http (前端的生命线)</a></li><li><a href="/blog/pages/interview/interview-one-side-15.html" class="sidebar-link">开发环境</a></li><li><a href="/blog/pages/interview/interview-one-side-16.html" class="sidebar-link">运行环境</a></li><li><a href="/blog/pages/interview/interview-one-side-17.html" class="sidebar-link">总结</a></li><li><a href="/blog/pages/interview/interview-one-side-18.html" class="sidebar-link">高频面试真题</a></li></ul></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>面试前准备</span> <span class="arrow right"></span></p> <!----></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="javascript核心知识"><a href="#javascript核心知识" class="header-anchor">#</a> JavaScript核心知识</h1> <!----> <blockquote><h3 id="_1-请写出弹出值-并解释为什么"><a href="#_1-请写出弹出值-并解释为什么" class="header-anchor">#</a> 1. 请写出弹出值，并解释为什么？</h3></blockquote> <p><strong><font color="#666">原题：</font></strong></p> <div class="language- line-numbers-mode"><pre class="language-text"><code>alert(a);
+a();
+
+var a = 3;
+function a() {
+    alert(10);
+}
+alert(a);
+a = 6;
+a();
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br></div></div><p><strong><font color="#666">考点：</font></strong></p> <blockquote><p>变量提升、函数提升</p></blockquote> <p><strong><font color="#666">答案：</font></strong></p> <blockquote><ol><li>第一次输出：<br>
+function a() {
+alert(10);
+}</li> <li>第二次输出：<br>
+10</li> <li>第三次输出：<br>
+3</li> <li>第四次输出：<br>
+a is not a function</li></ol></blockquote> <p><strong><font color="#666">解析：</font></strong> <br>
+其变形为：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>// 函数提升
+function a() {  // a =&gt; f
+    alert(10);
+}
+
+// 变量提升
+var a;  // undefind(被忽略)
+
+alert(a);  // 第一个输出是函数体 =&gt; f(a)
+a();  // 执行a方法，第二个输出是10
+
+a = 3;
+
+alert(a);  // 上面a被赋值，第三个输出是3
+a = 6;
+a();  // 函数被提升之后被赋值了，所以此时不存在f(a)，第四次输出a is not a function
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br></div></div><p><strong><font color="#f00">变量和函数提升注意事项：</font></strong></p> <ul><li>变量提升</li> <li>函数提升
+<ul><li>函数调用不论在哪里都可以执行函数</li> <li>函数优先于变量提升</li></ul></li></ul> <p><strong><font color="#666">扩展：</font></strong></p> <blockquote><h4 id="_1-1-示例"><a href="#_1-1-示例" class="header-anchor">#</a> <font color="#8BB0D2">1-1 示例：</font></h4> <h4 id="变量提升"><a href="#变量提升" class="header-anchor">#</a> 变量提升</h4></blockquote> <div class="language- line-numbers-mode"><pre class="language-text"><code>if (false) {
+    var a = 1;
+}
+
+console.log(a);
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><p><strong><font color="#8BB0D2">答案：</font></strong></p> <blockquote><p>undefind</p></blockquote> <p><strong><font color="#8BB0D2">解析：</font></strong> <br>
+这里存在变量提升，其变形是：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>var a;  // 变量被提升到上面
+if (false) {
+    a = 1;
+}
+
+console.log(a);  // undefind
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br></div></div><blockquote><h4 id="_1-2-示例"><a href="#_1-2-示例" class="header-anchor">#</a> <font color="#8BB0D2">1-2 示例：</font></h4> <h4 id="变量提升-2"><a href="#变量提升-2" class="header-anchor">#</a> 变量提升</h4></blockquote> <div class="language- line-numbers-mode"><pre class="language-text"><code>alert(a);
+a();
+
+var a = 3;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div><p><strong><font color="#8BB0D2">答案：</font></strong></p> <blockquote><p>undefind</p></blockquote> <p><strong><font color="#8BB0D2">解析：</font></strong> <br>
+这里存在变量提升，其变形是：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>var a;  // 变量被提升到上面
+alert(a);
+a();  // undefind
+
+a = 3;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><blockquote><h4 id="_1-3-示例"><a href="#_1-3-示例" class="header-anchor">#</a> <font color="#8BB0D2">1-3 示例：</font></h4> <h4 id="函数提升"><a href="#函数提升" class="header-anchor">#</a> 函数提升</h4></blockquote> <div class="language- line-numbers-mode"><pre class="language-text"><code>test();
+function test() {
+    console.log(1);
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div><p><strong><font color="#8BB0D2">答案：</font></strong></p> <blockquote><p>1</p></blockquote> <p><strong><font color="#8BB0D2">解析：</font></strong> <br>
+说明函数提升的优先级比变量提升高，test();不管写在哪里都可以执行。其变形为：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>// 函数提升
+function test() {  // test =&gt; f
+    console.log(1);
+}
+test();  // 执行函数
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><blockquote><h4 id="_1-4-1-示例"><a href="#_1-4-1-示例" class="header-anchor">#</a> <font color="#8BB0D2">1-4-1 示例：</font></h4> <h4 id="函数提升和变量提升混合"><a href="#函数提升和变量提升混合" class="header-anchor">#</a> 函数提升和变量提升混合</h4></blockquote> <div class="language- line-numbers-mode"><pre class="language-text"><code>function test() {
+    console.log(1);
+}
+var test = 2;
+console.log(test);
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><p><strong><font color="#8BB0D2">答案：</font></strong></p> <blockquote><p>2</p></blockquote> <p><strong><font color="#8BB0D2">解析：</font></strong> <br> <font color="#EB563B">注意：函数提升要比变量提升的优先级要高一些，且不会被变量声明覆盖，但是会被变量赋值之后覆盖。</font> <br>
+test函数先被提升，然后再被赋值，此时不存在test函数了，然后再进行变量提升，将var test提升到上面，其变形是：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>// 函数提升
+function test() {  // test =&gt; f
+    console.log(1);
+}
+var test;  // 变量被提升到上面
+test = 2;  // 被提升的函数会被变量赋值之后覆盖
+console.log(test);  // 2
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br></div></div><blockquote><h4 id="_1-4-2-示例"><a href="#_1-4-2-示例" class="header-anchor">#</a> <font color="#8BB0D2">1-4-2 示例：</font></h4> <h4 id="函数提升和变量提升混合-2"><a href="#函数提升和变量提升混合-2" class="header-anchor">#</a> 函数提升和变量提升混合</h4></blockquote> <div class="language- line-numbers-mode"><pre class="language-text"><code>function test() {
+    console.log(1);
+}
+var test;
+console.log(test);
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><p><strong><font color="#8BB0D2">答案：</font></strong></p> <blockquote><p>ƒ test() {
+console.log(1);
+}</p></blockquote> <p><strong><font color="#8BB0D2">解析：</font></strong> <br>
+此时var test;时，test值为undefind，undefind变量会被自动忽略，其变形是：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>// 函数提升
+function test() {  // test =&gt; f
+    console.log(1);
+}
+var test;  // undefind（被自动忽略）
+console.log(test);  // test =&gt; f
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br></div></div><blockquote><h4 id="_1-4-3-示例"><a href="#_1-4-3-示例" class="header-anchor">#</a> <font color="#8BB0D2">1-4-3 示例：</font></h4> <h4 id="函数提升和变量提升混合-3"><a href="#函数提升和变量提升混合-3" class="header-anchor">#</a> 函数提升和变量提升混合</h4></blockquote> <div class="language- line-numbers-mode"><pre class="language-text"><code>var test = 2;
+function test() {
+    console.log(1);
+}
+console.log(test);
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><p><strong><font color="#8BB0D2">答案：</font></strong></p> <blockquote><p>2</p></blockquote> <p><strong><font color="#8BB0D2">解析：</font></strong> <br>
+函数提升优先于变量提升，被提升的函数会被变量赋值之后覆盖，其变形为：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>// 函数提升（函数提升优先级比变量提升高）
+function test() {  // test =&gt; f
+    console.log(1);
+}
+var test;  // 变量被提升到上面
+test = 2;  // 被提升的函数会被变量赋值之后覆盖
+console.log(test);  // 2
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br></div></div><blockquote><h4 id="_1-5-表达式中的提升-深度扩展"><a href="#_1-5-表达式中的提升-深度扩展" class="header-anchor">#</a> <font color="#D9462F">1-5 表达式中的提升（深度扩展）</font></h4></blockquote> <p><strong><font color="#f00">表达式声明的函数注意事项：</font></strong></p> <ul><li>表达式声明的函数只能在内部访问</li> <li>表达式声明的函数无法被重写</li></ul> <blockquote><h4 id="_1-5-1示例"><a href="#_1-5-1示例" class="header-anchor">#</a> <font color="#8BB0D2">1-5-1示例：</font></h4> <h4 id="表达式中的提升"><a href="#表达式中的提升" class="header-anchor">#</a> 表达式中的提升</h4></blockquote> <div class="language- line-numbers-mode"><pre class="language-text"><code>var test = function test() {
+    
+}
+
+console.log(test);
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><p><strong><font color="#8BB0D2">答案：</font></strong></p> <blockquote><p>ƒ test() {
+}</p></blockquote> <p><strong><font color="#8BB0D2">解析：</font></strong> <br>
+变量提升，将f(test)赋值给test变量，其变形为：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>var test;
+test = function test() {
+    
+}
+
+console.log(test);  // test =&gt; f
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br></div></div><blockquote><h4 id="_1-5-2-示例"><a href="#_1-5-2-示例" class="header-anchor">#</a> <font color="#8BB0D2">1-5-2 示例：</font></h4> <h4 id="自执行函数"><a href="#自执行函数" class="header-anchor">#</a> 自执行函数</h4></blockquote> <div class="language- line-numbers-mode"><pre class="language-text"><code>(function test() {
+    
+})();
+
+console.log(test);
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><p><strong><font color="#8BB0D2">答案：</font></strong></p> <blockquote><p>test is not defind</p></blockquote> <p><strong><font color="#8BB0D2">解析：</font></strong> <br>
+自执行函数无法提升到外部，所以找不到test方法</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>(function test() {
+    // 只能在内部进行访问
+})();
+
+console.log(test);
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><blockquote><h4 id="_1-5-3-示例"><a href="#_1-5-3-示例" class="header-anchor">#</a> <font color="#8BB0D2">1-5-3 示例：</font></h4> <h4 id="表达式中的提升-2"><a href="#表达式中的提升-2" class="header-anchor">#</a> 表达式中的提升</h4></blockquote> <div class="language- line-numbers-mode"><pre class="language-text"><code>var q = function test() {
+    console.log(&quot;aaa&quot;, test);
+};
+
+q();
+console.log(test);
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br></div></div><p><strong><font color="#8BB0D2">答案：</font></strong></p> <blockquote><ol><li>第一次输出：<br>
+aaa <br>
+ƒ test() {
+console.log(&quot;aaa&quot;, test);
+}</li> <li>第二次输出：<br>
+undefined</li></ol></blockquote> <p><strong><font color="#8BB0D2">解析：</font></strong> <br>
+这里存在变量提升，且表达式声明的函数只能在内部进行访问，其变形为：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>var q;
+q = function test() {
+    // 这里的test即当前方法地方法体
+    console.log(&quot;aaa&quot;, test);
+};
+
+q();  // 执行q方法
+// 在外部拿不到表达式中声明的函数的方法体
+console.log(test);
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br></div></div><blockquote><h4 id="_1-5-4-示例"><a href="#_1-5-4-示例" class="header-anchor">#</a> <font color="#8BB0D2">1-5-4 示例：</font></h4> <h4 id="表达式中的提升-3"><a href="#表达式中的提升-3" class="header-anchor">#</a> 表达式中的提升</h4></blockquote> <div class="language- line-numbers-mode"><pre class="language-text"><code>var q = function test() {
+    test = 1;
+
+    console.log(&quot;aaa&quot;, typeof test);
+};
+
+q();
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br></div></div><p><strong><font color="#8BB0D2">答案：</font></strong></p> <blockquote><p>aaa <br>
+function</p></blockquote> <p><strong><font color="#8BB0D2">解析：</font></strong> <br>
+这里存在变量提升，且表达式声明的函数只能在内部进行访问，并且无法进行重写，其变形为：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>var q;
+q = function test() {
+    // test只能在内部进行访问
+    // test无法被重写
+    test = 1;
+
+    // aaa function
+    console.log(&quot;aaa&quot;, typeof test);  
+};
+q();
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br></div></div><blockquote><h4 id="_1-6-变量提升中的null和undefind"><a href="#_1-6-变量提升中的null和undefind" class="header-anchor">#</a> <font color="#8BB0D2">1-6 变量提升中的null和undefind</font></h4></blockquote> <p><strong><font color="#f00">变量提升中的null和undefind注意事项：</font></strong></p> <ul><li>系统的undefind会被自动忽略</li> <li>自己定义的undefind和null有意义</li></ul> <blockquote><h4 id="_1-6-1-示例"><a href="#_1-6-1-示例" class="header-anchor">#</a> <font color="#8BB0D2">1-6-1 示例：</font></h4> <h4 id="变量提升中的null和undefind"><a href="#变量提升中的null和undefind" class="header-anchor">#</a> 变量提升中的null和undefind</h4></blockquote> <div class="language- line-numbers-mode"><pre class="language-text"><code>function test() {
+    
+}
+
+var test;
+console.log(test);
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br></div></div><p><strong><font color="#8BB0D2">答案：</font></strong></p> <blockquote><p>ƒ test() {}</p></blockquote> <p><strong><font color="#8BB0D2">解析：</font></strong> <br>
+此时var test;时，test值为undefind，undefind变量会被自动忽略，其变形是：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>// 函数提升
+function test() {  // test =&gt; f
+    
+}
+var test;  // undefind（被自动忽略）
+console.log(test);  // test =&gt; f
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br></div></div><blockquote><h4 id="_1-6-2-示例"><a href="#_1-6-2-示例" class="header-anchor">#</a> <font color="#8BB0D2">1-6-2 示例：</font></h4> <h4 id="变量提升中的null和undefind-2"><a href="#变量提升中的null和undefind-2" class="header-anchor">#</a> 变量提升中的null和undefind</h4></blockquote> <div class="language- line-numbers-mode"><pre class="language-text"><code>function test() {
+    
+}
+
+var test = null;
+console.log(test);
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br></div></div><p><strong><font color="#8BB0D2">答案：</font></strong></p> <blockquote><p>null</p></blockquote> <p><strong><font color="#8BB0D2">解析：</font></strong> <br>
+只要你给他赋了值，它都是有意义的，其变形是：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>var test;
+function test() {
+    
+}
+
+test = null;
+console.log(test);  // null
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br></div></div><blockquote><h4 id="_1-6-3-示例"><a href="#_1-6-3-示例" class="header-anchor">#</a> <font color="#8BB0D2">1-6-3 示例：</font></h4> <h4 id="变量提升中的null和undefind-3"><a href="#变量提升中的null和undefind-3" class="header-anchor">#</a> 变量提升中的null和undefind</h4></blockquote> <div class="language- line-numbers-mode"><pre class="language-text"><code>function test() {
+    
+}
+
+var test = undefind;
+console.log(test);
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br></div></div><p><strong><font color="#8BB0D2">答案：</font></strong></p> <blockquote><p>undefind</p></blockquote> <p><strong><font color="#8BB0D2">解析：</font></strong> <br>
+只要你给他赋了值，它都是有意义的，其变形是：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>var test;
+function test() {
+    
+}
+
+test = undefind;
+console.log(test);  // undefind
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br></div></div><hr> <br> <blockquote><h3 id="_2-请写出如下输出值-并写出把注释调的代码取消注释的值-并解释为什么"><a href="#_2-请写出如下输出值-并写出把注释调的代码取消注释的值-并解释为什么" class="header-anchor">#</a> 2. 请写出如下输出值，并写出把注释调的代码取消注释的值，并解释为什么?</h3></blockquote> <p><strong><font color="#666">原题：</font></strong></p> <div class="language- line-numbers-mode"><pre class="language-text"><code>this.a = 20;
+
+var test = {
+    a: 40,
+    
+    init: ()=&gt; {
+        console.log(this.a);
+        function go() {
+            // this.a = 60
+
+            console.log(this.a);
+        }
+
+        go.prototype.a = 50;
+
+        return go;
+    }
+}
+
+// var p = test.init();
+// p();
+new(test.init())();
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br></div></div><p><strong><font color="#666">考点：</font></strong></p> <blockquote><p>this指向</p></blockquote> <p><strong><font color="#666">答案：</font></strong></p> <blockquote><ul><li>未取消注释时:</li></ul> <ol><li>第一次输出： <br>
+20</li> <li>第二次输出： <br>
+50</li></ol> <ul><li>取消注释时：</li></ul> <ol><li>第一次输出： <br>
+20</li> <li>第二次输出： <br>
+60</li> <li>第三次输出： <br>
+60</li> <li>第四次输出： <br>
+60</li></ol></blockquote> <p><strong><font color="#666">解析：</font></strong> <br>
+未取消注释时:</p> <ul><li><code>test.init();</code>的方法中，init是箭头函数的方法，箭头函数中的this是在定义函数的时候绑定的，即箭头函数的this是他父级的this，即箭头函数本身与init平级，也就是箭头函数本身所在的对象为test，而test的父执行上下文就是window，所以this指向在全局中，全局中的this是20</li> <li>假使<code>var result = test.init();</code>，<code>new result();</code>中，new的时候，this就会指向new出来的对象，而在new出来的对象中，构造方法的this优先级要大于原型链，但在init方法中没有构造方法，所以，在new的时候，它的this指向的是被实例化的result()本身，即test.init()本身，所以它的最终值为被实例化后的test.init()中的被挂载在原型链上的值，50</li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code>this.a = 20;
+
+var test = {
+    a: 40,
+    
+    init: ()=&gt; {
+        console.log(this.a);
+        
+        function go() {
+            console.log(this.a);
+        }
+
+        go.prototype.a = 50;
+
+        return go;
+    }
+}
+
+// 20 、50
+new(test.init())();
+
+/*
+    new(test.init())();
+    相当于
+    var result = test.init();
+    new result();
+*/
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br></div></div><p>取消注释时：</p> <ul><li>第一步同上。</li> <li>第二步，因为<code>var p = test.init();</code>执行test.init返回go函数，所以<code>p();</code>的this指向在go上，又由于函数中的this执行的构造函数的优先级大于原型链，所以这里是60。</li> <li><code>test.init()</code>返回的是go，所以this执行是go，优先级同上， 所以是60。</li> <li>实例化指向被new出来的对象是go，优先级同上，所以是60</li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code>this.a = 20;
+
+var test = {
+    a: 40,
+    
+    init: ()=&gt; {
+        console.log(this.a);
+        function go() {
+            this.a = 60
+
+            console.log(this.a);
+        }
+
+        go.prototype.a = 50;
+
+        return go;
+    }
+}
+
+var p = test.init();  // 20
+p();  // 60
+new(test.init())();  // 60、60
+
+/*
+    new(test.init())();
+    相当于
+    var result = test.init();
+    new result();
+*/
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br></div></div><p><strong><font color="#f00">this指向注意事项：</font></strong></p> <ul><li>this，谁调用指谁</li> <li>构造函数的优先级(访问权限) &gt; 原型链</li> <li>new的时候，this就会指向new出来的对象</li> <li>箭头函数
+<ul><li>箭头函数相当于bind，会改变this的指向</li> <li>箭头函数的this是他父级的this</li> <li>箭头函数把this固定到他父级的同级作用</li></ul></li> <li>能改变this指向的关键词
+<ul><li>bind</li> <li>apply</li> <li>call</li></ul></li> <li>一般函数this指向在执行的时候绑定</li> <li>箭头函数中的this是在定义函数的时候绑定</li> <li>严格模式
+<ul><li>非严格模式下默认指向window，</li> <li>严格模式下传null指向null，不传或者传undefined都指向undefined，即在严格模式下，没有写执行主体，this指向是undefined。</li></ul></li></ul> <p><strong><font color="#666">扩展：</font></strong></p> <blockquote><h4 id="_2-1-示例"><a href="#_2-1-示例" class="header-anchor">#</a> <font color="#8BB0D2">2-1 示例：</font></h4> <h4 id="this指向"><a href="#this指向" class="header-anchor">#</a> this指向</h4></blockquote> <div class="language- line-numbers-mode"><pre class="language-text"><code>this.a = 20;
+function test() {
+    console.log(this.a);
+}
+
+test();  
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br></div></div><p><strong><font color="#8BB0D2">答案：</font></strong></p> <blockquote><p>20</p></blockquote> <p><strong><font color="#8BB0D2">解析：</font></strong> <br>
+谁调用指向谁，这里指window，即全局：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>this.a = 20;
+function test() {
+    console.log(this.a);
+}
+
+// 相当于window.test();  window调用，指向window
+test();  // 20
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br></div></div><blockquote><h4 id="_2-2-示例"><a href="#_2-2-示例" class="header-anchor">#</a> <font color="#8BB0D2">2-2 示例：</font></h4> <h4 id="this指向-2"><a href="#this指向-2" class="header-anchor">#</a> this指向</h4></blockquote> <div class="language- line-numbers-mode"><pre class="language-text"><code>this.a = 20;
+var test = {
+    a: 40,
+    init: function () {
+        console.log(this.a);
+    }
+}
+
+test.init();
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br></div></div><p><strong><font color="#8BB0D2">答案：</font></strong></p> <blockquote><p>40</p></blockquote> <p><strong><font color="#8BB0D2">解析：</font></strong> <br>
+test调用init方法，this指向test：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>this.a = 20;
+var test = {
+    a: 40,
+    init: function () {
+        console.log(this.a);
+    }
+}
+
+// test调用init方法，this指向test
+test.init();  // 40
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br></div></div><blockquote><h4 id="_2-3-示例"><a href="#_2-3-示例" class="header-anchor">#</a> <font color="#8BB0D2">2-3 示例：</font></h4> <h4 id="this指向-3"><a href="#this指向-3" class="header-anchor">#</a> this指向</h4></blockquote> <div class="language- line-numbers-mode"><pre class="language-text"><code>this.a = 20;
+var test = {
+    a: 40,
+    init: function () {
+        console.log(this.a);
+    }
+}
+
+var fn = test.init;
+fn();
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br></div></div><p><strong><font color="#8BB0D2">答案：</font></strong></p> <blockquote><p>20</p></blockquote> <p><strong><font color="#8BB0D2">解析：</font></strong> <br>
+相当于window.fn，这里的this指向window：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>this.a = 20;
+var test = {
+    a: 40,
+    init: function () {
+        console.log(this.a);
+    }
+}
+
+var fn = test.init;
+// 相当于window.fn，这里的this指向window
+fn();  // 20
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br></div></div><blockquote><h4 id="_2-4-示例"><a href="#_2-4-示例" class="header-anchor">#</a> <font color="#8BB0D2">2-4 示例：</font></h4> <h4 id="this指向-4"><a href="#this指向-4" class="header-anchor">#</a> this指向</h4></blockquote> <div class="language- line-numbers-mode"><pre class="language-text"><code>this.a = 20;
+var test = {
+    a: 40,
+    init: function () {
+        function go() {
+            console.log(this.a);
+        }
+
+        go();
+    }
+}
+
+test.init();
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br></div></div><p><strong><font color="#8BB0D2">答案：</font></strong></p> <blockquote><p>20</p></blockquote> <p><strong><font color="#8BB0D2">解析：</font></strong> <br>
+没有人调用go，相当于window.go，this指全局</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>this.a = 20;
+var test = {
+    a: 40,
+    init: function () {
+        function go() {
+            console.log(this.a);
+        }
+
+        // 相当于window.go
+        go();  // 20
+    }
+}
+
+test.init();
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br></div></div><blockquote><h4 id="_2-5-示例"><a href="#_2-5-示例" class="header-anchor">#</a> <font color="#8BB0D2">2-5 示例：</font></h4> <h4 id="this指向优先级"><a href="#this指向优先级" class="header-anchor">#</a> this指向优先级</h4></blockquote> <div class="language- line-numbers-mode"><pre class="language-text"><code>this.a = 20;
+var test = {
+    a: 40,
+    init: function () {
+        function go() {
+            this.a = 50;
+        }
+
+        go.prototype.a = 60;
+
+        console.log((new go()).a);
+    }
+}
+
+test.init();
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br></div></div><p><strong><font color="#8BB0D2">答案：</font></strong></p> <blockquote><p>50</p></blockquote> <p><strong><font color="#8BB0D2">解析：</font></strong> <br>
+构造函数的优先级(访问权限) &gt; 原型链，并且用new调用go，this就指向实例，此时的this指向就是go，而构造方法的this指向优先级高，所以a就是在go的实例的构造方法中的值。</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>this.a = 20;
+var test = {
+    a: 40,
+    
+    // 构造函数的优先级(访问权限) &gt; 原型链
+    init: function () {
+        // 构造方法
+        function go() {
+            this.a = 50;
+        }
+
+        // 原型链
+        go.prototype.a = 60;
+
+        // new的时候，this就会指向new出来的对象
+        // 用new调go，this就指向实例
+        console.log((new go()).a);
+    }
+}
+
+test.init();  // 50
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br></div></div><blockquote><h4 id="_2-6-示例"><a href="#_2-6-示例" class="header-anchor">#</a> <font color="#8BB0D2">2-6 示例：</font></h4> <h4 id="箭头函数中的this指向"><a href="#箭头函数中的this指向" class="header-anchor">#</a> 箭头函数中的this指向</h4></blockquote> <div class="language- line-numbers-mode"><pre class="language-text"><code>this.a = 20;
+var test = {
+    a: 40,
+
+    init: () =&gt; {
+        console.log(this.a);
+    }
+}
+
+test.init();
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br></div></div><p><strong><font color="#8BB0D2">答案：</font></strong></p> <blockquote><p>20</p></blockquote> <p><strong><font color="#8BB0D2">解析：</font></strong> <br> <font color="#EB563B">注意：箭头函数中的this是在定义函数的时候绑定，而不是在执行函数的时候绑定，所谓的定义时候绑定，就是this是继承自父执行上下文！！</font> <br>
+箭头函数相当于bind，会改变this的指向，它把这个this固定到他父级的同级作用域中了，即箭头函数本身与init平级，也就是箭头函数本身所在的对象为test，而test的父执行上下文就是window，所以this指向在全局中。</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>this.a = 20;
+var test = {
+    a: 40,
+    /**
+     * 箭头函数相当于bind，会改变this的指向
+     * 箭头函数的this是他父级的this
+     * 箭头函数把this固定到他父级的同级作用域去
+     */
+    init: () =&gt; {
+        console.log(this.a);
+    }
+}
+
+test.init();  // 20
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br></div></div><blockquote><h4 id="_2-7-示例"><a href="#_2-7-示例" class="header-anchor">#</a> <font color="#8BB0D2">2-7 示例：</font></h4> <h4 id="全局this指向中的length"><a href="#全局this指向中的length" class="header-anchor">#</a> 全局this指向中的length</h4></blockquote> <div class="language- line-numbers-mode"><pre class="language-text"><code>function fn() {
+    console.log(this.length);
+}
+
+fn();  // iframe数量
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><p><strong><font color="#8BB0D2">答案：</font></strong></p> <blockquote><p>0</p></blockquote> <p><strong><font color="#8BB0D2">解析：</font></strong> <br>
+在全局中，this的length指的是iframe的数量</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>function fn() {
+    console.log(this.length);
+}
+
+fn();  // 0 =&gt; iframe数量
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><blockquote><h4 id="_2-8-能改变this指向的关键词-深度扩展"><a href="#_2-8-能改变this指向的关键词-深度扩展" class="header-anchor">#</a> <font color="#D9462F"> 2-8 能改变this指向的关键词（深度扩展）</font></h4> <h4 id="bind、apply、call"><a href="#bind、apply、call" class="header-anchor">#</a> bind、apply、call</h4></blockquote> <p><strong><font color="#f00">表达式声明的函数注意事项：</font></strong></p> <ul><li>bind
+<ul><li>es6对象写法和箭头函数的bind无法进行new</li> <li>new对bind失效</li> <li>bind的硬绑可以强制改变this指向</li> <li>bind的软绑防止硬绑</li></ul></li> <li>apply</li> <li>call</li></ul> <blockquote><h4 id="_2-8-1示例"><a href="#_2-8-1示例" class="header-anchor">#</a> <font color="#8BB0D2">2-8-1示例：</font></h4> <h4 id="bind"><a href="#bind" class="header-anchor">#</a> bind</h4></blockquote> <div class="language- line-numbers-mode"><pre class="language-text"><code>this.a = 20;
+function test() {
+    console.log(this.a);
+}
+
+var obj = {
+    a: 30,
+}
+
+// 如何才能使this指向obj，使a=30？
+test();
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br></div></div><p><strong><font color="#8BB0D2">答案：</font></strong></p> <blockquote><p>test.bind(obj);</p></blockquote> <p><strong><font color="#8BB0D2">解析：</font></strong> <br>
+使用bind改变this指向。</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>this.a = 20;
+function test() {
+    console.log(this.a);
+}
+
+var obj = {
+    a: 30,
+}
+
+// 需要bind的this指向obj
+var result = test.bind(obj);  // 30
+result();
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br></div></div><blockquote><h4 id="_2-8-1-1示例"><a href="#_2-8-1-1示例" class="header-anchor">#</a> <font color="#8BB0D2">2-8-1-1示例：</font></h4> <h4 id="当bind遇到箭头函数"><a href="#当bind遇到箭头函数" class="header-anchor">#</a> 当bind遇到箭头函数</h4></blockquote> <div class="language- line-numbers-mode"><pre class="language-text"><code>var o = {
+    foo: function () {
+        console.log(&quot;hello&quot;);
+    },
+    
+    bar() {
+        console.log(&quot;world&quot;);
+    }
+}
+
+o.bar();
+
+var f = o.foo.bind({});
+new f();
+
+var p = o.bar.bind({});
+p();
+
+new p();
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br></div></div><p><strong><font color="#8BB0D2">答案：</font></strong></p> <blockquote><ol><li>第一次输出：<br>
+world</li> <li>第二次输出：<br>
+hello</li> <li>第三次输出：<br>
+world</li> <li>第四次输出：<br>
+p is not a constructor</li></ol></blockquote> <p><strong><font color="#8BB0D2">解析：</font></strong> <br>
+es6对象写法和箭头函数无法进行new。</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>var o = {
+    foo: function () {
+        console.log(&quot;hello&quot;);
+    },
+    
+    // es6对象写法和箭头函数无法进行new，
+    bar() {
+        console.log(&quot;world&quot;);
+    }
+}
+
+o.bar();  // world
+
+var f = o.foo.bind({});
+new f();  // hello
+
+var p = o.bar.bind({});
+p();  // world
+
+// es6对象写法和箭头函数无法进行new
+new p();  // p is not a constructor
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br></div></div><blockquote><h4 id="_2-8-1-2示例"><a href="#_2-8-1-2示例" class="header-anchor">#</a> <font color="#8BB0D2">2-8-1-2示例：</font></h4> <h4 id="bind的硬绑"><a href="#bind的硬绑" class="header-anchor">#</a> bind的硬绑</h4> <p>强制改变this指向</p></blockquote> <div class="language- line-numbers-mode"><pre class="language-text"><code>this.a = 20;
+
+function test() {
+    console.log(this.a);
+}
+
+var obj = {
+    a: 30,
+}
+
+test();
+
+var result = test.bind(obj);
+result();
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br></div></div><p><strong><font color="#8BB0D2">答案：</font></strong></p> <blockquote><ol><li>第一次输出：<br>
+20</li> <li>第二次输出：<br>
+30</li></ol></blockquote> <p><strong><font color="#8BB0D2">解析：</font></strong> <br>
+一般函数是在定义的时候绑定，即谁调指谁，bind的硬绑可以强制改变this指向：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>this.a = 20;
+
+function test() {
+    console.log(this.a);
+}
+
+var obj = {
+    a: 30,
+}
+
+// 是window调的test，所以此时的test中的this指向window
+test();  // 20
+
+// bind强制将test中的this指向obj
+test.bind(obj)();  // 30
+
+/**
+  var result = test.bind(obj);
+  result();
+*/
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br></div></div><blockquote><h4 id="_2-8-1-3示例"><a href="#_2-8-1-3示例" class="header-anchor">#</a> <font color="#8BB0D2">2-8-1-3示例：</font></h4> <h4 id="bind的软绑"><a href="#bind的软绑" class="header-anchor">#</a> bind的软绑</h4> <p>不希望this被改变，防止被硬绑</p></blockquote> <div class="language- line-numbers-mode"><pre class="language-text"><code>this.a = 20;
+
+function test() {
+    console.log(this.a);  // 20
+}
+
+var obj = {
+    a: 30,
+}
+
+var result = test.bind(null);
+result();
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br></div></div><p><strong><font color="#8BB0D2">答案：</font></strong></p> <blockquote><p>20</p></blockquote> <p><strong><font color="#8BB0D2">解析：</font></strong> <br>
+x.bind(null)的时候是软绑，可以使防止this指向q强制被改变，防止被硬绑：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>this.a = 20;
+
+function test() {
+    console.log(this.a);
+}
+
+var obj = {
+    a: 30,
+}
+
+// 软绑，使test中的this依旧在window
+// 防止硬绑
+test.bind(null)();  // 20
+
+/**
+  var result = test.bind(obj);
+  result();
+*/
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br></div></div><blockquote><h4 id="_2-8-1-4示例"><a href="#_2-8-1-4示例" class="header-anchor">#</a> <font color="#8BB0D2">2-8-1-4示例：</font></h4> <h4 id="当bind硬绑遇上new时"><a href="#当bind硬绑遇上new时" class="header-anchor">#</a> 当bind硬绑遇上new时</h4></blockquote> <div class="language- line-numbers-mode"><pre class="language-text"><code>this.a = 20;
+
+function test() {
+    console.log(this.a);
+}
+
+var obj = {
+    a: 30,
+}
+
+var result = test.bind(obj);
+result();
+
+new result();
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br></div></div><p><strong><font color="#8BB0D2">答案：</font></strong></p> <blockquote><ol><li>第一次输出：<br>
+30</li> <li>第二次输出：<br>
+undefined</li></ol></blockquote> <p><strong><font color="#8BB0D2">解析：</font></strong> <br>
+当bind硬绑遇上new时，new对bind失效：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>this.a = 20;
+
+function test() {
+    console.log(this.a);
+}
+
+var obj = {
+    a: 30,
+}
+
+var result = test.bind(obj);
+result();  // 硬绑 =&gt; 30
+
+// new对bind失效
+new result();  // undefined
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br></div></div><blockquote><h4 id="_2-8-1-5示例-重点-重点-重点"><a href="#_2-8-1-5示例-重点-重点-重点" class="header-anchor">#</a> <font color="#D9462F">2-8-1-5示例：<font color="#f00">[重点][重点][重点]</font></font>：</h4> <p><font color="#f00">手写一个bind</font></p></blockquote> <p><font color="#EB563B"><strong>Array.prototype.slice.call(arguments)详解：</strong></font></p> <ul><li>Array.prototype.slice(start,end)
+<ul><li>选取数组索引start到end之间的数组，组成一个新数组，返回一个新数组，原数组不会发生变化</li> <li>该方法并不会修改数组，而是返回一个子数组</li></ul></li> <li>[].slice.call(arguments, 0)
+<ul><li><font color="#f00">call（）和apply（）方法都是在特定的作用域中调用函数</font>，
+实际上等于设置函数体内this对象的值。
+<font color="#f00">apply和call方法的第一个参数都是特定的作用域</font>，
+第二个参数不同，apply第二个参数可以是Array的实例，也可以是arguments对象。
+<font color="#f00">call方法需要逐个列出需要传递的参数</font>。</li> <li>arguments对象指数与数组类似（它并不是Array的实例），但是可以使用方括号语法访问每一个元素，使用length来确定传递进来多少个参数。</li> <li>Array.prototype.slice.call()可以理解为：改变数组的slice方法的作用域，在特定作用域中去调用slice方法，call（）方法的第二个参数表示传递给slice的参数即截取数组的起始位置。</li></ul></li> <li>slice返回一个数组，该方法只有一个参数的情况下表示除去数组内的第一个元素。</li> <li>就本上下文而言，原数组的第一个参数是“事件名称”。</li> <li>具体像“click”,&quot;render&quot;般的字符串，其后的元素才是处理函数所接纳的参数列表。</li> <li>这段代码的目的是为了拿到参数里除第一个以外后面的所有参数。</li> <li>需要借用的方法slice在Array.prototype 上，然后call接受两个参数，</li> <li>第一个是需要借用方法的对象，第二个是传进方法的参数，也就是1</li></ul> <p><font color="#EB563B"><strong>fToBind.apply详解：</strong></font></p> <ul><li>执行一个bind的逻辑</li> <li>bind -&gt; 用原来的函数加上apply(this)</li> <li>如果要bind(a) =&gt; 原来的函数.apply(a)</li></ul> <br> <p>bind.js</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>// 为了不和原生的bind产生冲突
+// 判断如果在原生的Function的原型链上没有那个值
+if (!Function.prototype.bind) {
+    Function.prototype.bind = function (oThis) {
+    
+        // 如果不是函数来调用的话，抛出错误
+        if (typeof this !== &quot;function&quot;) {
+            throw new TypeError(&quot;请使用函数执行&quot;);
+        }
+        
+        /**
+         * 第一步是拿到
+         * var result = test.bind(obj, &quot;hello&quot;);
+         * result(&quot;world&quot;); 
+         * 中的hello
+         */
+        
+        // 这段代码的目的是为了拿到参数里除第一个以外后面的所有参数
+        var aArgs = Array.prototype.slice.call(arguments, 1),
+        
+        // 保留原有的this,原来的函数
+        fToBind = this,
+        
+        // 空函数
+        fNop = function () {},
+        
+        // 处理完之后，bind返回的值
+        fBound = function () {
+            /**
+             * 第二步是拿到
+             * var result = test.bind(obj, &quot;hello&quot;);
+             * result(&quot;world&quot;); 
+             * 中的world
+             */
+        
+            // 用apply修改this
+            // 如果要bind(a) =&gt; 原来的函数.apply(a)
+            // 如果当前实例是由fBound创建的，就把这个this留住了，否则就把用户传过来的oThis传过去
+            // 然后要把后面的那参数连接上，此时不需要再把第一个参数去掉了，因为它是外部执行函数的值
+            return fToBind.apply(this instanceof fBound ? this : oThis, aArgs.concat(Array.prototype.slice.call(arguments)));
+        }
+        
+        // 如果在函数的原型链上挂载一个方法，则会报错，显示挂载的那个方法不是一个函数，所以需要做以下步骤
+        // 判断如果最初的那个函数上有原型链
+        if (this.prototype) {
+            // 在空函数上挂载一个原型链，将最初的那个原型链赋值给空函数上的原型链
+            fNop.prototype = this.prototype;
+        }
+        
+        // 将实例化之后的空函数赋值给最终要返回的函数上的原型链上
+        fBound.prototype = new fNop();
+        
+        // fBound是你要真正执行的一个函数
+        // 为什么要return一个函数，因为bind得到一个函数，然后再执行
+        // 返回最终要被执行的函数
+        return fBound;
+    }
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br><span class="line-number">44</span><br><span class="line-number">45</span><br><span class="line-number">46</span><br><span class="line-number">47</span><br><span class="line-number">48</span><br><span class="line-number">49</span><br><span class="line-number">50</span><br><span class="line-number">51</span><br><span class="line-number">52</span><br><span class="line-number">53</span><br><span class="line-number">54</span><br><span class="line-number">55</span><br><span class="line-number">56</span><br><span class="line-number">57</span><br><span class="line-number">58</span><br></div></div><p>html调用bind.js</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>function test(data1, data2) {
+    console.log(data1);
+    console.log(data2);
+}
+
+// 在test函数的原型链上挂载一个方法
+test.prototype.me = function() {
+    console.log(&quot;原型测试函数&quot;);
+}
+
+var obj = {
+    a: 30
+}
+
+var result = test.bind(obj, &quot;hello&quot;);
+result(&quot;world&quot;);
+
+var ins = new result(&quot;world&quot;);
+ins.me();  // 执行原型链上的方法
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br></div></div><blockquote><h4 id="_2-9-请写出如下输出值-并解释为什么-扩展"><a href="#_2-9-请写出如下输出值-并解释为什么-扩展" class="header-anchor">#</a> 2-9 请写出如下输出值，并解释为什么（扩展）</h4></blockquote> <p><strong><font color="#666">原题：</font></strong></p> <div class="language- line-numbers-mode"><pre class="language-text"><code>var num = 1;
+
+function yideng() {
+    &quot;use strict&quot;;
+
+    console.log(this)
+
+    console.log(this.num++);
+}
+
+function yideng2() {
+    console.log(++this.num);
+}
+
+(function () {
+    &quot;use strict&quot;;
+    yideng2();
+})();
+
+yideng();
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br></div></div><p><strong><font color="#8BB0D2">考点：</font></strong></p> <blockquote><p>严格模式下的this指向</p></blockquote> <p><strong><font color="#8BB0D2">答案：</font></strong></p> <blockquote><ol><li>第一次输出：<br>
+2</li> <li>第二次输出：<br>
+Cannot read property 'num' of undefined</li></ol></blockquote> <p><strong><font color="#8BB0D2">解析：</font></strong> <br> <font color="#EB563B">注意：严格模式下传null指向null，不传或者传undefined都指向undefined，即在严格模式下，没有写执行主体，this指向都是undefined</font> <br></p> <p>严格模式下<code>console.log(this);</code>没有主体，其值为undefind，<code>console.log(this.num++);</code>则变形为<code>console.log(undefind.num++);</code>，所以报错找不到num。</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>var num = 1;
+
+function yideng() {
+    &quot;use strict&quot;;
+
+    console.log(this);  // undefind
+
+    console.log(this.num++);
+}
+
+function yideng2() {
+    console.log(++this.num);
+}
+
+(function () {
+    &quot;use strict&quot;;
+    yideng2();  // 2
+})();
+
+yideng();  // Cannot read property 'num' of undefined
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br></div></div><blockquote><h4 id="_2-10-请写出以下代码执行结果-扩展"><a href="#_2-10-请写出以下代码执行结果-扩展" class="header-anchor">#</a> 2-10 请写出以下代码执行结果（扩展）</h4></blockquote> <p><strong><font color="#666">原题：</font></strong></p> <div class="language- line-numbers-mode"><pre class="language-text"><code>function C1(name) {
+    if (name) this.name = name;
+}
+
+function C2(name) {
+    this.name = name;
+}
+
+function C3(name) {
+    this.name = name || &quot;fe&quot;;
+}
+
+C1.prototype.name = &quot;yideng&quot;;
+C2.prototype.name = &quot;lao&quot;;
+C3.prototype.name = &quot;yuan&quot;;
+
+console.log((new C1().name) + (new C2().name) + (new C3().name));
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br></div></div><p><strong><font color="#8BB0D2">考点：</font></strong></p> <blockquote><p>严格模式下的this指向</p></blockquote> <p><strong><font color="#8BB0D2">答案：</font></strong></p> <blockquote><ol><li>第一次输出：<br>
+yideng</li> <li>第二次输出：<br>
+undefined</li> <li>第三次输出：<br>
+fe</li></ol></blockquote> <p><strong><font color="#8BB0D2">解析：</font></strong> <br> <font color="#EB563B">注意：new的时候，this的指向，会指向构造函数</font> <br></p> <ul><li><code>new C1().name</code>：
+<ul><li>C1的构造函数里面没有传值，不存在name，就在原型链上找。原型链上C1挂载了&quot;yideng&quot;，因此<code>new C1().name</code>的值为&quot;yideng&quot;</li></ul></li> <li><code>new C2().name</code>：
+<ul><li>C2的构造函数里面注册了name，但这个name为undefind，所以这个undefind是一个有意义的值。</li></ul></li> <li><code>new C3().name</code>：
+<ul><li>C3这个构造函数里面注册了一个name，但没有传值，但没有传值 <code>this.name = undefind</code>，所以这个短路语句中输出的就是fe。</li></ul></li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code>function C1(name) {
+    // 没有进到if里面，不存在name
+    // 构造函数不存在name，没有注册，就在原型链上找
+    if (name) {
+        this.name = name;
+    }
+}
+
+function C2(name) {
+    // 注册了name，但没有传值 this.name = undefind
+    // undefind也是有意义的值
+    this.name = name;
+}
+
+function C3(name) {
+    // 没有传值 fe
+    this.name = name || &quot;fe&quot;;
+}
+
+C1.prototype.name = &quot;yideng&quot;;
+C2.prototype.name = &quot;lao&quot;;
+C3.prototype.name = &quot;yuan&quot;;
+
+console.log((new C1().name) + (new C2().name) + (new C3().name));
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br></div></div><hr> <br> <blockquote><h3 id="_3-请写出以li的输出值-并用三种方法正确输出li里的数字"><a href="#_3-请写出以li的输出值-并用三种方法正确输出li里的数字" class="header-anchor">#</a> 3. 请写出以li的输出值，并用三种方法正确输出li里的数字</h3></blockquote> <p><strong><font color="#666">原题：</font></strong></p> <p>html:</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>&lt;ul&gt;
+    &lt;li&gt;1&lt;/li&gt;
+    &lt;li&gt;2&lt;/li&gt;
+    &lt;li&gt;3&lt;/li&gt;
+    &lt;li&gt;4&lt;/li&gt;
+    &lt;li&gt;5&lt;/li&gt;
+    &lt;li&gt;6&lt;/li&gt;
+&lt;/ul&gt;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br></div></div><p>js：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>var list_li = document.getElementsByTagName(&quot;li&quot;);
+
+for (var i=0; i&lt;list_li.length; i++) {
+    list_li[i].onclick = function () {
+        console.log(i);
+    }
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br></div></div><p><strong><font color="#8BB0D2">考点：</font></strong></p> <blockquote><p>this扩展及同步执行和异步执行队列</p></blockquote> <p><strong><font color="#8BB0D2">答案：</font></strong></p> <blockquote><ol><li>解法1：<br>
+使用this</li></ol></blockquote> <div class="language- line-numbers-mode"><pre class="language-text"><code>...
+    list_li[i].onclick = function () {
+        console.log(this.innerHTML);
+    }
+...
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><blockquote><ol start="2"><li>解法2：<br>
+使用let</li></ol></blockquote> <div class="language- line-numbers-mode"><pre class="language-text"><code>...
+for (let i=0; i&lt;list_li.length; i++) {
+    list_li[i].onclick = function () {
+        console.log(i+1);
+    }
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br></div></div><blockquote><ol start="3"><li>解法3：<br>
+使用闭包</li></ol></blockquote> <div class="language- line-numbers-mode"><pre class="language-text"><code>...
+    // 闭包，立即执行
+    list_li[i].onclick = (function (i) {
+        console.log(i);
+    })(i)
+...
+或
+...
+    (function (i) {
+        list_li[i].onclick = function () {
+            console.log(i);
+        }
+    })(i);
+...
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br></div></div><p><strong><font color="#8BB0D2">解析：</font></strong> <br>
+原因：</p> <ul><li>原来不管点击哪个li，输出的一直是6。</li> <li>因为js分为同步执行栈和异步执行队列，意思是：js中同步执行的东西会先执行，同步执行之后，会拉异步执行队列。</li> <li>所以就这里面的代码而言，for是同步的任务，先定义即先执行，而点击，真正干活的时候，是在异步队列里面的。</li> <li>为什么一直会输出6，是因为它在执行异步队列里面的事件click的时候，同步执行栈中的for循环即同步事件早就已经被执行完了，再之后一直点击，一直执行异步执行栈的click，所以就会一直输出6。</li></ul> <p>解决方法：</p> <ul><li>解法一使用this：
+<ul><li>点击li的时候，是元素调用this，this指向就是元素，异步执行的时候，每次点击，this指向的都是当前元素。</li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code>...
+    list_li[i].onclick = function () {
+        // 元素调用this，指向元素
+        console.log(this.innerHTML);
+    }
+...
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br></div></div></li> <li>解法二使用let：
+<ul><li>如果使用let，块级作用域可以直接执行。</li> <li>这里的i不是直接从当前元素取的，是遍历list_li数组，并从其中数，而数组是从0开始的，因此这里要+1</li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code>...
+// 如果这里使用let，说明循环里面是块级作用域
+for (let i=0; i&lt;list_li.length; i++) {
+    list_li[i].onclick = function () {
+        // 这里需要i+1
+        console.log(i+1);
+    }
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br></div></div></li> <li>解法三使用闭包：
+<ul><li>将click事件放在闭包里面，闭包可以立即执行，因为在循环中，所以每次点击执行的时候，得到一个i然后输出一个i。</li> <li><font color="#EB563B">注意：闭包很容易造成变量的无法回收和内存泄漏。</font></li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code>...
+    // 得到一个变量i
+    (function (i) {
+        list_li[i].onclick = function () {
+            console.log(i+1);
+        }
+        // 输出一个变量i
+    })(i);
+...
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br></div></div></li></ul> <br> <font color="#f00">关于异步队列：<br></font>
+什么东西会放异步队列里呢，ajax、setTimeOut、click……
+<br><br> <p><font color="#f00">关于let：<br></font></p> <ul><li>let存储的是块级作用域，块级作用域就是<code>{ …… }</code>，块级作用域中代码是可以执行的。</li> <li>但它有一个问题，可以举例说明：
+<ul><li><code>console.log({} + []); // [object Object]</code>：
+<ul><li>这里的<code>{}</code>指表达式即对象，而<code>[]</code>隐式转换成<code>&quot;&quot;</code>。</li> <li>而表达式输出就是<code>[object Object]</code>，后面为空，所以总输出就是<code>[object Object]</code>。</li></ul></li> <li><code>{} + [] // 0</code>：
+<ul><li>这里的<code>{}</code>指的是块级作用域，而它也能被等价地转换为<code>+[]</code>。</li> <li>此时，[]被转换为字符串''，隐式转换成 toString。</li> <li>而一元加号又会将字符串''转换为数字 0。</li> <li>显然<code>{} + []</code>结果为 0。</li></ul></li></ul></li></ul> <br> <p><font color="#f00">关于<code>[object Object]</code>：<br></font></p> <ul><li>object（小写）：
+<ul><li>&quot;object&quot;是一个字符串，你不定义的话没有意义，<code>typeof {}; // object</code>，小写主要是为了区别于Object。
+<ul><li>只要检查的变量是一个对象，或者是 Null，那它就会返回 object，这当然不够精确，所以有了 instanceof。</li> <li>typeof 是为了检查数据类型，instanceof是为了看一个变量是否是某个对象的实例。</li></ul></li></ul></li> <li>Object（大写）：
+<ul><li>Object 是 JavaScript 中一个重要的对象，其它对象都是基于它的，包括你创建的函数。Object 是一种对象类型。</li></ul></li></ul> <br> <p><font color="#f00">关于闭包：<br></font></p> <ul><li>什么是闭包?
+<ul><li>简单来说，<font color="#f00">
+闭包就是能够读取其他函数内部变量的函数</font>，在本质上，闭包是将函数内部和函数外部连接起来的桥梁。例如在javascript中，只有函数内部的子函数才能读取局部变量，所以闭包可以理解成“定义在一个函数内部的函数“。</li> <li>闭包是 JS 函数作用域的副产品。</li></ul></li></ul> <p>由于 JS 的函数内部可以使用函数外部的变量，所以这段代码正好符合了闭包的定义：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>// 变量声明
+var local = &quot;str&quot;;
+
+// 函数声明
+function foo () {
+    console.log(str);
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br></div></div><ul><li>为什么需要闭包？
+<ul><li>局部变量无法共享和长久的保存，而全局变量可能造成变量污染，所以我们希望有一种机制既可以长久的保存变量又不会造成全局污染。</li></ul></li> <li>何时使用？
+<ul><li>变量既想反复使用，又想避免全局污染</li></ul></li> <li>如何使用？
+<ul><li>定义外层函数，封装被保护的局部变量。</li> <li>定义内层函数，执行对外部函数变量的操作。</li> <li>外层函数返回内层函数的对象，并且外层函数被调用，结果保存在一个全局的变量中。</li></ul></li> <li>缺点：
+<ul><li>占用更多内存</li> <li>不容易被释放</li></ul></li> <li>怎么解决闭包的内存泄漏？
+<ul><li>严格说起来不算是闭包的问题，主要是因为ie的bug，ie在我们使用完闭包之后，依然回收不了闭包里面引用的变量。</li> <li>什么是内存泄露？
+<ul><li>定义：一块被分配的内存既不能使用，也不能回收。从而影响性能，甚至导致程序崩溃。
+<font color="#f00">
+通俗来说，内存泄露是指你用不到（访问不到）的变量，依然占居着内存空间，不能被再次利用起来。</font></li> <li>起因：JavaScript的垃圾自动回收机制会按一定的策略找出那些不再继续使用的变量，释放其占有的内存。然而由于一些原因导致在这种机制下内存管理器不能正确解读JavaScript变量的生命周期，从而没有释放其内存，而也没有再被使用。循环引用是导致以上情况的主要原因之一。</li></ul></li> <li>解决办法：
+<ul><li>常用的解决方法就是在JavaScript代码段运行完之时将形成循环引用的JavaScript对象手动设置为空，切断引用。</li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code>  function example() {
+      var element = document.getElementByID(&quot;div1&quot;);  //div1用完之后一直驻留在内存中
+      
+      element.onclick = function() {
+          alert(&quot;This is a leak!&quot;); // 这里用div1导致内存泄露
+      }
+      
+      // 添加的语句
+      element = null;  // 最后应将div1解除引用来避免内存泄露
+  }
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br></div></div></li></ul></li></ul> <hr> <br> <blockquote><h3 id="_4-请写出输出值-并解释为什么。"><a href="#_4-请写出输出值-并解释为什么。" class="header-anchor">#</a> 4. 请写出输出值，并解释为什么。</h3></blockquote> <p><strong><font color="#666">原题：</font></strong></p> <div class="language- line-numbers-mode"><pre class="language-text"><code>function test(m) {
+    m = {
+        v: 5
+    }
+}
+
+var m = {
+    k: 30
+}
+
+test(m);
+alert(m.v);
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br></div></div><p><strong><font color="#8BB0D2">考点：</font></strong></p> <blockquote><p>了解按引用传递和按引用传递</p></blockquote> <p><strong><font color="#8BB0D2">答案：</font></strong></p> <blockquote><p>undefined</p></blockquote> <p><strong><font color="#8BB0D2">解析：</font></strong></p> <ul><li>按值传递：
+<ul><li>哪些数据类型是按值传递的？
+<ul><li>基本数据类型存放在栈区，访问是按值访问。</li> <li>基本的数据类型有：undefined、boolean、number、string、null。</li></ul></li> <li>当基本类型的数据赋值时，赋的是实际的值。当变量a赋值给变量b的时候，a和b相互独立，是没有关联关系的。</li></ul></li> <li>按引用传递：
+<ul><li>引用类型指的是对象，可以拥有属性和方法，并且我们可以修改其属性和方法。</li> <li>引用对象存放的方式是：在栈中存放对象变量标示名称和该对象在堆中的存放地址，在堆中存放数据。</li> <li>对象使用的是引用赋值。当我们把一个对象赋值给一个新的变量时，赋的其实是该对象在堆中的地址，而不是堆中的数据。</li> <li>也就是两个对象指向的是同一个存储空间，无论哪个对象发生改变，其实都是改变的存储空间的内容，因此，两个对象是联动的。</li> <li>哪些数据类型是按引用传递的？
+<ul><li>对象、数组、原型链</li></ul></li></ul></li></ul> <br> <font color="#EB563B">注意：基本数据类型存放在栈区，对象的地址（对象名）存放在栈区，值存放在堆区。</font> <br> <ul><li><code>test(m)</code>中的m和外面的m没有关系，就是一个简单的实参。</li> <li>函数的值是按值传递，但这个值和外部的值指向指向同一个地址，就是一个实参，但这个实参的指向，和外部的m对象的指向的值是同一个。</li> <li>首先m.k=30，之后将m对象当做实参代入test方法，重写m对象，重写即两个m没有关系，即test方法中的m.v=5，由于两个m对象没有关系，方法中的m为局部变量，所以m.v获取不到，即为undefind。</li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code>function test(m) {
+    m = {
+        v: 5
+    }
+}
+
+var m = {
+    k: 30
+}
+
+test(m);  // 这个m是按值传递的，就是一个简单的实参
+alert(m.v);  // undefined
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br></div></div><p><strong><font color="#666">扩展：</font></strong></p> <blockquote><h4 id="_4-1-示例"><a href="#_4-1-示例" class="header-anchor">#</a> <font color="#8BB0D2">4-1 示例：</font></h4> <h4 id="按值传递"><a href="#按值传递" class="header-anchor">#</a> 按值传递</h4></blockquote> <div class="language- line-numbers-mode"><pre class="language-text"><code>var a = 1;
+var b = a;
+
+b = 3;
+
+alert(a);
+alert(b);
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br></div></div><p><strong><font color="#8BB0D2">答案：</font></strong></p> <blockquote><ol><li>第一次输出：<br>
+1</li> <li>第二次输出：<br>
+3</li></ol></blockquote> <p><strong><font color="#8BB0D2">解析：</font></strong></p> <div class="language- line-numbers-mode"><pre class="language-text"><code>var a = 1;
+var b = a;
+
+b = 3;
+
+alert(a);  // 1
+alert(b);  // 3
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br></div></div><blockquote><h4 id="_4-2-示例"><a href="#_4-2-示例" class="header-anchor">#</a> <font color="#8BB0D2">4-2 示例：</font></h4> <h4 id="按引用传递-按址传递"><a href="#按引用传递-按址传递" class="header-anchor">#</a> 按引用传递(按址传递)</h4></blockquote> <div class="language- line-numbers-mode"><pre class="language-text"><code>var a = {
+    qq: 25
+};
+var b = a;
+
+b.xx = 1;
+
+console.log(a);
+console.log(b);
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br></div></div><p><strong><font color="#8BB0D2">答案：</font></strong></p> <blockquote><ol><li>第一次输出：<br>
+{qq: 25, xx: 1}</li> <li>第二次输出：<br>
+{qq: 25, xx: 1}</li></ol></blockquote> <p><strong><font color="#8BB0D2">解析：</font></strong>
+当对象被赋值，其实就是对象的地址被赋值，两个对象其实就是指向同一个地址（即指向同一个堆内存中），被赋值的对象改变的话，其实就是改变堆内存中的值，因此如果一个对象被另一个对象赋值的话，两个对象是相互关联的，他们的输出相同。</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>var a = {
+    qq: 25
+};
+var b = a;
+
+b.xx = 1;
+
+console.log(a);  // {qq: 25, xx: 1}
+console.log(b);  // {qq: 25, xx: 1}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br></div></div><blockquote><h4 id="_4-3-示例"><a href="#_4-3-示例" class="header-anchor">#</a> <font color="#8BB0D2">4-3 示例：</font></h4> <h4 id="按引用传递-重写"><a href="#按引用传递-重写" class="header-anchor">#</a> 按引用传递(重写)</h4></blockquote> <div class="language- line-numbers-mode"><pre class="language-text"><code>var a = {
+    qq: 25
+};
+var b = a;
+
+b = {
+    x: 11
+};
+
+console.log(a);
+console.log(b);
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br></div></div><p><strong><font color="#8BB0D2">答案：</font></strong></p> <blockquote><ol><li>第一次输出：<br>
+{qq: 25}</li> <li>第二次输出：<br>
+{xx: 11}</li></ol></blockquote> <p><strong><font color="#8BB0D2">解析：</font></strong>
+当对象被赋值时，如果那个对象重写了，那么两个对象不再有关联。</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>var a = {
+    qq: 25
+};
+var b = a;
+
+b.xx = 11;
+
+console.log(a);  // {qq: 25}
+console.log(b);  // {xx: 11}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br></div></div><blockquote><h4 id="_4-4-示例"><a href="#_4-4-示例" class="header-anchor">#</a> <font color="#8BB0D2">4-4 示例：</font></h4> <h4 id="按引用传递-重写2"><a href="#按引用传递-重写2" class="header-anchor">#</a> 按引用传递(重写2)</h4></blockquote> <div class="language- line-numbers-mode"><pre class="language-text"><code>function test(m) {
+    m.v = 5;
+}
+
+var m = {
+    k: 30
+}
+
+test(m);
+console.log(m);
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br></div></div><p><strong><font color="#8BB0D2">答案：</font></strong></p> <blockquote><p>{k: 30, v: 5}</p></blockquote> <p><strong><font color="#8BB0D2">解析：</font></strong></p> <ul><li><code>test(m)</code>中的m和外面的m没有关系，就是一个简单的实参。</li> <li>m是一个对象，test方法中把m对象传入当做实参，m.k是一个属性，之后再执行test方法，将外面的m对象代入，对象中再添加一个属性m.v。</li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code>function test(m) {
+    m.v = 5;
+}
+
+var m = {
+    k: 30
+}
+
+test(m);
+console.log(m);  // {k: 30, v: 5}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br></div></div><blockquote><h4 id="_4-5-示例"><a href="#_4-5-示例" class="header-anchor">#</a> <font color="#8BB0D2">4-5 示例：</font></h4> <h4 id="按引用传递-重写3"><a href="#按引用传递-重写3" class="header-anchor">#</a> 按引用传递(重写3)</h4></blockquote> <div class="language- line-numbers-mode"><pre class="language-text"><code>function test(x) {
+    m = {
+        v: 5
+    }
+}
+
+var m = {
+    k: 30
+}
+
+test(m);
+console.log(m);
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br></div></div><p><strong><font color="#8BB0D2">答案：</font></strong></p> <blockquote><p>{v: 5}</p></blockquote> <p><strong><font color="#8BB0D2">解析：</font></strong></p> <ul><li><code>test(m)</code>中的m和外面的m没有关系，就是一个简单的实参。</li> <li>首先执行<code>m.k=30;</code>，再执行test方法，将m对象的值传入当做实参，但test方法它接收的实参是x，x未定义（x is not defined），所以他这里就只是执行了方法，重写了m的值，但m.k的值并没有带过去，所以输出的只有m.v的值</li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code>function test(x) {
+    m = {
+        v: 5
+    }
+}
+
+var m = {
+    k: 30
+}
+
+test(m);
+console.log(m);  // {v: 5}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br></div></div><hr> <br> <blockquote><h3 id="_5-请写出输出值-并解释为什么。"><a href="#_5-请写出输出值-并解释为什么。" class="header-anchor">#</a> 5. 请写出输出值，并解释为什么。</h3></blockquote> <p><strong><font color="#666">原题：</font></strong></p> <div class="language- line-numbers-mode"><pre class="language-text"><code>function yideng() {
+    console.log(1);
+}
+
+(function () {
+    if (false) {
+        function yideng() {
+            console.log(2);
+        }
+    }
+
+    yideng();
+})();
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br></div></div><p><strong><font color="#8BB0D2">考点：</font></strong></p> <blockquote><p>函数提升，浏览器历史</p></blockquote> <p><strong><font color="#8BB0D2">答案：</font></strong></p> <blockquote><p>yideng is not a function</p></blockquote> <p><strong><font color="#8BB0D2">解析：</font></strong> <br> <font color="#EB563B">注意：在if{...}else{...}等的逻辑判断中，无法将整个函数提升出来，但仅只在函数中体现。有函数，就特殊（提升），因为他和函数的作用域有关。</font> <br></p> <p>这里涉及到函数提升，变形为：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>function yideng() {
+    console.log(1);
+}
+
+(function () {
+    // 因为逻辑的原因，函数体没有带出来。
+    var yideng;  // undefind
+
+    if (false) {
+        function yideng() {
+            console.log(2);
+        }
+    }
+
+    yideng();  // yideng is not a function
+})();
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br></div></div><p>上面if中的方法没有执行，但函数提升出去了部分，yideng这个变量为undefind，并不是一个方法，所以这里调用yideng方法的时候报错不是一个function。
+<br>
+浏览器历史：</p> <ul><li>在最早期的浏览器中，它的答案等于2。它的函数提升会把整个函数提取出来。</li> <li>后来有一段时间，它会等于1，就是不让它提升。</li> <li>到现在，让函数提升，但不让函数体提升。</li></ul> <p><strong><font color="#666">扩展：</font></strong></p> <blockquote><h4 id="_5-1-示例"><a href="#_5-1-示例" class="header-anchor">#</a> <font color="#8BB0D2">5-1 示例：</font></h4> <h4 id="函数提升-2"><a href="#函数提升-2" class="header-anchor">#</a> 函数提升</h4></blockquote> <div class="language- line-numbers-mode"><pre class="language-text"><code>function yideng() {
+    console.log(1);
+}
+
+if (false) {
+    function yideng() {
+        console.log(2);
+    }
+}
+
+yideng();
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br></div></div><p><strong><font color="#8BB0D2">答案：</font></strong></p> <blockquote><p>1</p></blockquote> <p><strong><font color="#8BB0D2">解析：</font></strong>
+当if{...}else{...}等逻辑判断不在函数体中的时候，它没有提升：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>function yideng() {
+    console.log(1);
+}
+
+if (false) {
+    function yideng() {
+        console.log(2);
+    }
+}
+
+yideng();  // 1
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br></div></div><blockquote><h4 id="_5-2-示例"><a href="#_5-2-示例" class="header-anchor">#</a> <font color="#8BB0D2">5-2 示例：</font></h4> <h4 id="函数提升-3"><a href="#函数提升-3" class="header-anchor">#</a> 函数提升</h4></blockquote> <div class="language- line-numbers-mode"><pre class="language-text"><code>function test() {
+    var a = 1;
+}
+
+test();
+
+alert(a);
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br></div></div><p><strong><font color="#8BB0D2">答案：</font></strong></p> <blockquote><p>a is not defined</p></blockquote> <p><strong><font color="#8BB0D2">解析：</font></strong>
+函数里面什么都特殊，因为函数里面是私有作用域（局部变量）。</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>function test() {
+    var a = 1;
+}
+
+test();
+
+alert(a);  // a is not defined
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br></div></div><hr> <br> <blockquote><h3 id="_6-请用一句话算出0-100之间学生的学生等级-如90-100为一等生、80-90为二等生-以此类推。"><a href="#_6-请用一句话算出0-100之间学生的学生等级-如90-100为一等生、80-90为二等生-以此类推。" class="header-anchor">#</a> 6. 请用一句话算出0-100之间学生的学生等级，如90-100为一等生、80-90为二等生，以此类推。</h3> <h3 id="【不允许使用if-switch等】"><a href="#【不允许使用if-switch等】" class="header-anchor">#</a> 【不允许使用if switch等】</h3></blockquote> <p><strong><font color="#8BB0D2">考点：</font></strong></p> <blockquote><p>算法</p></blockquote> <p><strong><font color="#8BB0D2">答案：</font></strong></p> <blockquote><p><code>10 - parseInt(分数/10);</code></p></blockquote> <p><strong><font color="#8BB0D2">解析：</font></strong> <br>
+90~100 =&gt; 一等生 <br>
+80~90 =&gt; 二等生 <br>
+70~80 =&gt; 三等生 <br>
+每一个等级差10，可以用取整解决。 <br>
+假使这个学生他的成绩为98： <br>
+parseInt(98 / 10) = 9, <br>
+那么10 - 9 = 1，就是这个学生的等级。</p> <hr> <br> <blockquote><h3 id="_7-请用一句话遍历变量a。"><a href="#_7-请用一句话遍历变量a。" class="header-anchor">#</a> 7. 请用一句话遍历变量a。 <br></h3> <h3 id="禁止使用for-已知var-a-abc"><a href="#禁止使用for-已知var-a-abc" class="header-anchor">#</a> 禁止使用for, 已知var a = &quot;abc&quot;;</h3></blockquote> <p><strong><font color="#666">原题：</font></strong></p> <div class="language- line-numbers-mode"><pre class="language-text"><code>var a = &quot;abc&quot;;
+
+// 请用一句话遍历变量a，禁止使用for。
+...
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div><p><strong><font color="#8BB0D2">考点：</font></strong></p> <blockquote><p>es6中数组的使用及相关api</p></blockquote> <p><strong><font color="#8BB0D2">答案：</font></strong></p> <blockquote><ol><li>解法一：</li></ol></blockquote> <div class="language- line-numbers-mode"><pre class="language-text"><code>var a = &quot;abc&quot;;
+
+console.log(...new Set(a));
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><blockquote><ol start="2"><li>解法二：</li></ol></blockquote> <div class="language- line-numbers-mode"><pre class="language-text"><code>var a = &quot;abc&quot;;
+
+console.log(Array.from(a));
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><blockquote><ol start="3"><li>解法三：</li></ol></blockquote> <div class="language- line-numbers-mode"><pre class="language-text"><code>var a = &quot;abc&quot;;
+
+console.log(Array.prototype.slice.call(a));
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><p><strong><font color="#8BB0D2">解析：</font></strong></p> <blockquote><ol><li>解法一： <br>
+es6语法，但使用Set会去重。</li></ol></blockquote> <div class="language- line-numbers-mode"><pre class="language-text"><code>var a = &quot;abc&quot;;
+
+// a b c
+console.log(...new Set(a));
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div><blockquote><ol start="2"><li>解法二： <br>
+es6语法。</li></ol></blockquote> <div class="language- line-numbers-mode"><pre class="language-text"><code>var a = &quot;abc&quot;;
+
+// [&quot;a&quot;, &quot;b&quot;, &quot;c&quot;]
+console.log(Array.from(a));  
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div><blockquote><ol start="3"><li>解法三： <br>
+es5语法，比较老，使用call。</li></ol></blockquote> <div class="language- line-numbers-mode"><pre class="language-text"><code>var a = &quot;abc&quot;;
+
+// [&quot;a&quot;, &quot;b&quot;, &quot;c&quot;]
+console.log(Array.prototype.slice.call(a));
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div><hr> <br> <blockquote><h3 id="_8-写出如下代码执行结果-并解释为什么。"><a href="#_8-写出如下代码执行结果-并解释为什么。" class="header-anchor">#</a> 8. 写出如下代码执行结果，并解释为什么。</h3></blockquote> <p><strong><font color="#666">原题：</font></strong></p> <div class="language- line-numbers-mode"><pre class="language-text"><code>debugger
+var length = 10;
+function fn() {
+    console.log(this.length);
+    debugger
+}
+
+var yideng = {
+    length: 5,
+
+    method: function (fn) {
+        fn();
+        debugger
+
+        arguments[0]();
+        debugger
+    }
+};
+
+debugger
+yideng.method(fn, 1);
+debugger
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br></div></div><p><strong><font color="#8BB0D2">考点：</font></strong></p> <blockquote><p>函数提升，浏览器历史</p></blockquote> <p><strong><font color="#8BB0D2">答案：</font></strong></p> <blockquote><ol><li>第一次输出：<br>
+10</li> <li>第二次输出：<br>
+2</li></ol></blockquote> <p><strong><font color="#8BB0D2">解析：</font></strong> <br></p> <p><font color="#EB563B">注意：this.length指页面iframe的数量</font> <br></p> <ul><li>当程序执行到<code>yideng.method(fn, 1);</code>的时候，执行method方法，并带两个参数，fn和1。</li> <li>语句的参数中第一个值为函数，第二个值为1，执行此语句，将参数代入，因为第一个参数是一个方法，则最上面fn方法开始执行，此时fn中打印的是<code>this.length</code>，此时的this指向的是window，一般默认<code>this.length</code>指iframe的数量，但在全局length已经被定义了，且为10，所以此时<code>this.length</code>的值为10。</li> <li>fn挂在arguments上，相当于的参数，method有两个参数</li> <li>而在mothod方法下面的arguments，即是当前方法的参数，即method也是arguments。</li> <li>然后进到method方法，此时两个参数都被带进去了，此时<code>fn = fn()</code>，所以方法中的<code>fn();</code>实际上是<code>fn()()</code>即为<code>undefind</code>。</li> <li>而在mothod方法下面的arguments，即是当前方法的参数，又因为它是下面执行的语句带过来的，下面执行的那个语句带2个参数fn和1，因此，arguments是一个数组，arguments[0]=&gt;fn，arguments[1]=&gt;1。</li> <li>运行到arguments<a href="">0</a>之后，由于arguments[0]等价于fn，即fn()，此时再次执行fn方法。</li> <li>this指向arguments</li> <li>arguments调用了fn</li> <li>而此时执行fn方法的时候，是在method的方法里，所以此时的this指向的是method，即arguments，而arguments的length即就是参数的个数，所以这里的<code>this.length</code>的值为2。</li> <li>当执行完<code>arguments[0]();</code>方法后，此时method方法执行结束，跳出方法。</li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code>var length = 10;
+
+function fn() {
+    // 这里的this.length指页面iframe的数量
+    console.log(this.length);  // 0
+}
+
+var yideng = {
+    length: 5,
+
+    method: function (fn) {
+        fn();  // undefind
+
+        arguments[0]();  // fn();
+    }
+};
+
+// 第一个值为函数，第二个值为1
+// fn挂到了arguments上，所以fn就是method的参数
+yideng.method(fn, 1);  // 10, 2
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br></div></div><hr> <br> <p><font color="#666" size="5">~End~</font></p></div> <footer class="page-edit"><div class="edit-link"><a href="https://github.com/zmx2321/blog/edit/master/docs/pages/interview/interview-base-1.md" target="_blank" rel="noopener noreferrer">在 GitHub 上编辑此页</a> <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></div> <div class="last-updated"><span class="prefix">上次更新:</span> <span class="time">2021/7/12 下午3:46:25</span></div></footer> <div class="page-nav"><p class="inner"><!----> <span class="next"><a href="/blog/pages/interview/interview-base-2.html">基础面试题汇总</a>
+      →
+    </span></p></div> </main></div><div class="global-ui"><div></div></div></div>
+    <script src="/blog/assets/js/app.6428f6c2.js" defer></script><script src="/blog/assets/js/4.266a15b9.js" defer></script><script src="/blog/assets/js/5.c5d0b239.js" defer></script><script src="/blog/assets/js/157.39ebd509.js" defer></script>
+  </body>
+</html>

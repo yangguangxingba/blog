@@ -1,0 +1,218 @@
+﻿
+
+
+#######################################################################################
+# kibana安装
+#######################################################################################
+# 下载kibana：
+	wget https://artifacts.elastic.co/downloads/kibana/kibana-5.6.4-linux-x86_64.tar.gz
+
+### 解压缩：
+tar zxvf kibana-5.6.4-linux-x86_64.tar.gz
+
+### 安装x-pack插件： ($home替换为kibana安装目录)
+	$home/bin/kibana-plugin install x-pack
+
+
+### 启动：($home替换为kibana安装目录)
+
+	$home/bin/kibana
+
+### 后台运行启动：($home替换为kibana安装目录)
+
+	nohup $home/bin/kibana  > /dev/null &
+
+
+#######################################################################################
+# 莎士比亚数据集
+#######################################################################################
+
+### 下载：
+wget https://download.elastic.co/demos/kibana/gettingstarted/shakespeare_6.0.json
+
+### 创建mapping ：
+
+PUT /shakespeare
+{
+ "mappings": {
+  "doc": {
+   "properties": {
+    "speaker": {"type": "keyword"},
+    "play_name": {"type": "keyword"},
+    "line_id": {"type": "integer"},
+    "speech_number": {"type": "integer"}
+   }
+  }
+ }
+}
+
+###  导入数据：
+curl -H 'Content-Type: application/x-ndjson' -XPOST 'http://elasticserver:9200/shakespeare/doc/_bulk?pretty'   -u elktest --data-binary @/download/shakespeare_6.0.json 
+
+
+### 确认mapping：
+GET /shakespeare/_mapping
+
+### 确认数据：
+GET /shakespeare/_search
+
+#######################################################################################
+# 一组虚构的账户与随机生成的数据。
+#######################################################################################
+### 下载：
+wget https://download.elastic.co/demos/kibana/gettingstarted/accounts.zip
+
+### 解压缩：
+unzip accounts.zip
+
+### 本示例无需创建mapping：
+
+### 导入数据：
+curl -H 'Content-Type: application/x-ndjson' -XPOST 'http://elasticserver:9200/bank/account/_bulk?pretty'  -u elktest --data-binary @/download/accounts.json
+
+### 确认mapping：
+GET /account/_mapping
+
+### 确认数据：
+GET /account/_search
+
+
+#######################################################################################
+# 一组随机生成的日志文件。
+#######################################################################################
+### 下载：
+wget https://download.elastic.co/demos/kibana/gettingstarted/logs.jsonl.gz
+
+###  解压缩：
+gunzip logs.jsonl.gz
+
+### 创建mapping 3-1：
+
+PUT /logstash-2015.05.18
+{
+  "mappings": {
+    "log": {
+      "properties": {
+        "geo": {
+          "properties": {
+            "coordinates": {
+              "type": "geo_point"
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+### 创建mapping 3-2：
+
+PUT /logstash-2015.05.19
+{
+  "mappings": {
+    "log": {
+      "properties": {
+        "geo": {
+          "properties": {
+            "coordinates": {
+              "type": "geo_point"
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+### 创建mapping 3-3：
+
+PUT /logstash-2015.05.20
+{
+  "mappings": {
+    "log": {
+      "properties": {
+        "geo": {
+          "properties": {
+            "coordinates": {
+              "type": "geo_point"
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+### 导入数据：
+curl -H 'Content-Type: application/x-ndjson' -XPOST ''http://elasticserver:9200/_bulk?pretty'  -u elktest --data-binary @/download/logs.jsonl
+
+
+### 确认mapping：
+GET /logstash-2015.05.20/_mapping
+
+### 确认数据：
+GET /logstash-2015.05.20/_search
+
+
+
+#######################################################################################
+# Graph 图 操作
+#######################################################################################
+
+### 创建mapping：
+
+PUT /viewtest
+{
+ "mappings": {
+  "log": {
+   "properties": {
+	"uid": {"type": "integer"},
+    "product": {"type": "keyword"},
+    "operation": {"type": "keyword"}
+   }
+  }
+ }
+}
+
+
+
+### 导入数据：
+
+POST /viewtest/log/1
+{  "uid": 1,  "product": "a",  "operation": "view"}
+POST /viewtest/log/2
+{  "uid": 1,  "product": "b",  "operation": "view"}
+POST /viewtest/log/3
+{  "uid": 1,  "product": "c",  "operation": "comment"}
+POST /viewtest/log/4
+{  "uid": 2,  "product": "a",  "operation": "view"}
+POST /viewtest/log/5
+{  "uid": 2,  "product": "b",  "operation": "view"}
+POST /viewtest/log/6
+{  "uid": 2,  "product": "c",  "operation": "comment"}
+POST /viewtest/log/7
+{  "uid": 3,  "product": "b",  "operation": "view"}
+POST /viewtest/log/8
+{  "uid": 3,  "product": "b",  "operation": "comment"}
+POST /viewtest/log/9
+{  "uid": 3,  "product": "b",  "operation": "favorite"}
+POST /viewtest/log/10
+{  "uid": 4,  "product": "b",  "operation": "view"}
+POST /viewtest/log/11
+{  "uid": 4,  "product": "b",  "operation": "comment"}
+POST /viewtest/log/12
+{  "uid": 4,  "product": "d",  "operation": "view"}
+POST /viewtest/log/13
+{  "uid": 5,  "product": "a",  "operation": "view"}
+POST /viewtest/log/14
+{  "uid": 5,  "product": "a",  "operation": "comment"}
+POST /viewtest/log/15
+{  "uid": 5,  "product": "d",  "operation": "view"}
+
+
+
+### 确认mapping：
+GET /viewtest/_mapping
+
+### 确认数据：
+GET /viewtest/_search

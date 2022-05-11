@@ -1,0 +1,286 @@
+.header{
+    height: 40px;
+}
+
+/* 主体部分 */
+.kq_main {
+    width: 100%;
+    height: calc(100vh - 40px - 50px);
+    margin-top: 40px;
+}
+
+/*上*/
+.kq_main_top {
+    width: 95%;
+    height: 16%;
+    margin: 58px auto 25px;
+    max-height: 160px;
+    background: linear-gradient(to right,#2F76ED,#2451B1);
+    border-radius: 6px;
+    box-shadow: 0px 2px 5px 2px #c3c3c3;
+    overflow: hidden;
+}
+
+.kq_main_top ul {
+    display: flex;
+    margin: 7.5% auto 0;
+}
+
+.kq_main_top li {
+    flex: 1;
+    text-align: center;
+    color: #fff;
+    font-size: 13px;
+}
+
+.kq_main_top li dd {
+    margin-top: 6px;
+    font-weight: bold;
+}
+
+/*下*/
+.kq_main_bot {
+    position: relative;
+    width: 100%;
+    height: 52%;
+    overflow: hidden;
+    background: #fff;
+}
+
+.time_box, .kbtn_wrap {
+    position: absolute;
+}
+
+/* 左侧时间 */
+.kq_main_bot .time_box {
+    width: 36%;
+    height: 90%;
+    top: 5%;
+    left: 20px;
+}
+
+.time_box > ul {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.time_box > ul li {
+    position: relative;
+    margin-left: 18px;
+    font-size: 12px;
+}
+
+.time_box > ul li::before {
+    content: ' ';
+    position: absolute;
+    left: -23px;
+    width: 10px;
+    height: 10px;
+    border-radius: 10px;
+    overflow: hidden;
+    background: #ccc;
+    z-index: 1;
+}
+
+.time_box > ul li:first-child::before {
+    background: #2F76ED;
+}
+
+.time_box b.lie {
+    position: absolute;
+    top: 6px;
+    left: -1px;
+    width: 100%;
+    border-left: solid 1px #d0d0d0;
+}
+
+.time_box .dkstau {
+    height: 92%;  /* 打卡未完成状态 */
+}
+
+.time_box .daka_stau {
+    display: none;
+    position: absolute;
+    top: 32px;
+    left: 20px;
+}
+
+.time_box .daka_stau ul li {
+    font-size: 13px;
+}
+
+.time_box .daka_stau ul li:first-child span {
+    margin-left: 15px;
+    border: solid 1px #51D330;
+    padding: 0px 8px;
+    color: #51D330;
+    font-weight: initial;
+    font-size: 10px;
+}
+
+.time_box .daka_stau ul li:first-child span.dktxtyc {
+    color: #F0331A;
+    border: solid 1px #F0331A;
+}
+
+.time_box .daka_stau ul li:last-child {
+    position: relative;
+    margin: 12px 0 0 18px;
+}
+
+.time_box .daka_stau ul li:last-child::before {
+    content: ' ';
+    position: absolute;
+    top: 50%;
+    left: -17px;
+    width: 13px;
+    height: 15px;
+    background: url(../imgs/didian.png) top no-repeat;
+    background-size: 100% 100%;
+    transform: translateY(-50%);
+}
+
+.daka_stau.xbdk {
+    margin-top: 46%;
+}
+
+/* 右侧打卡按钮 */
+.kq_main_bot .kbtn_wrap {
+    width: 73%;
+    right: 10px;
+    height: 56%;
+    top: 21%;
+}
+
+.kbtn_wrap .btn_cont {
+    position: relative;
+    width: 108px;
+    height: 108px;
+    background: #fff;
+    margin-left: 28px;
+    border-radius: 70px;
+    border: solid 4.5px #C2D7FB;
+    overflow: hidden;
+}
+
+.btn_cont .circle_in {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 93%;
+    height: 93%;
+    border-radius: 100px;
+    background: linear-gradient(to bottom,#2F76ED,#2451B1);
+    overflow: hidden;
+}
+
+.circle_in ul {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.circle_in ul li {
+    color: #fff;
+    text-align: center;
+}
+
+.circle_in ul li:first-child {
+    font-weight: bold;
+}
+
+.circle_in ul li:last-child {
+    font-size: 12px;
+    margin-top: 3px;
+}
+
+.kbtn_wrap .btn_txt {
+    width: 80%;
+    margin: 13px 0 0 -10%;
+}
+
+/* 不能打卡 */
+.kbtn_wrap.bndk .btn_cont {
+    border: solid 4.5px #ccc;
+}
+
+.kbtn_wrap.bndk .btn_cont .circle_in {
+    background: #CCCCCC;
+}
+
+/* 异常打卡 */
+.kbtn_wrap.ycdk .btn_cont {
+    border: solid 4.5px #F5BFB7;
+}
+
+.kbtn_wrap.ycdk .btn_cont .circle_in {
+    background: #F2461A;
+}
+
+.btn_txt ul li {
+    position: relative;
+    margin-left: 15px;
+    text-align: center;
+    font-size: 12px;
+}
+
+.btn_txt ul li:last-child {
+    margin-top: 6px;
+}
+
+.btn_txt ul li:last-child {
+    color: #234DBE;
+}
+
+.btn_txt ul li::before {
+    content: ' ';
+    position: absolute;
+    top: 52%;
+    background: #f00;
+    transform: translateY(-50%);
+    margin-left: -16px;
+    overflow: hidden;
+}
+
+.btn_txt ul li:first-child::before {
+    width: 13px;
+    height: 13px;
+    background: url(../imgs/dkcg.png) top no-repeat;
+    background-size: 100% 100%;
+}
+
+.btn_txt ul li:last-child::before {
+    width: 12px;
+    height: 14px;
+    background: url(../imgs/sx.png) top no-repeat;
+    background-size: 100% 100%;
+}
+
+/* 
+  打卡完成时的状态
+ */
+.kqdkfinl {
+    height: 75%;
+}
+
+/* time_box */
+.kqdkfinl .time_box {
+    width: 90%;
+}
+
+.kqdkfinl .time_box .dkstau {
+    height: 40%;
+}
+
+.kqdkfinl .time_box ul li::before {
+    background: #2F76ED;
+}
+
+/* kbtn_wrap */
+.kqdkfinl .kbtn_wrap {
+    top: 52%;
+}
+

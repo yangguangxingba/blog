@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/kaoqing.css">
+    <title>考勤</title>
+    <script>
+        function Href(FILE){
+            window.location.href="file:///android_asset/web/"+FILE;
+        }
+    </script>
+</head>
+<body>
+<div class="session">
+    <!-- header -->
+    <div class="header">
+        <div class="header_title">考勤</div>
+    </div>
+
+    <!-- main -->
+    <div class="kq_main">
+        <!-- 上 -->
+        <div class="kq_main_top">
+            <ul>
+                <li>
+                    <dl>
+                        <dt>考勤(天)</dt>
+                        <dd>3</dd>
+                    </dl>
+                </li>
+                <li>
+                    <dl>
+                        <dt>迟到</dt>
+                        <dd>3</dd>
+                    </dl>
+                </li>
+                <li>
+                    <dl>
+                        <dt>早退</dt>
+                        <dd>1</dd>
+                    </dl>
+                </li>
+                <li>
+                    <dl>
+                        <dt>未打卡</dt>
+                        <dd>1</dd>
+                    </dl>
+                </li>
+            </ul>
+        </div>
+
+        <!-- 下 -->
+        <!-- 
+            打卡完成 <div class="time_box kqdkfinl">
+        -->
+        <div class="kq_main_bot">
+            <!-- 左侧时间 -->
+            <div class="time_box">
+                <ul>
+                    <li class="dkstau">上班时间9:00</li>
+                    <li>下班时间18:00</li>
+                </ul>
+                <b class="lie dkstau"></b>
+
+                <!-- 打卡状态-上班打卡完成时显示 dktxtyc-->
+                <div class="daka_stau sbdk">
+                    <ul>
+                        <li><b id="sbdksj">打卡时间08：56</b><span id="stautxtsb">正常</span></li>
+                        <li id="sbdkwz"><!-- 浙江省杭州市江干区四季青街道三堡东方大厦B座三堡产业大厦 --></li>
+                    </ul>
+                </div>
+
+                <!-- 打卡状态-下班打卡完成时显示 -->
+                <div class="daka_stau xbdk">
+                    <ul>
+                        <li><b id="xbdksj">打卡时间08：56</b><span id="stautxtxb">正常</span></li>
+                        <li id="xbdkwz"><!-- 浙江省杭州市江干区四季青街道三堡东方大厦B座三堡产业大厦 --></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- 右侧打卡按钮 -->
+            <!-- 
+                不能打卡 bndk
+                迟到打卡 chdk
+                早退打卡 ztdk
+             -->
+            <div class="kbtn_wrap">
+                <div class="btn_cont">
+                    <div class="circle_in" id="bigBtn">
+                        <ul>
+                            <li id="dkTime">08:56</li>
+                            <li id="dkstu">上班打卡</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="btn_txt">
+                    <ul>
+                        <li id="cxdwtxt">已进入考勤范围浙江省杭州市...</li>
+                        <li id="cxdw">重新定位</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- bottom -->
+    <div class="bottom_menu">
+        <div class="bottom_menu_name">
+            <span class="bottom_icon" onclick="Href('message.html')"><img src="../imgs/message.png" style="height:100%;width:100%;"></span>
+            <span class="bottom_name" onclick="Href('message.html')">消息</span>
+        </div>
+        <div class="bottom_menu_name">
+            <span class="bottom_icon"><img src="../imgs/kaoqing_blue.png" style="height:100%;width:100%;"></span>
+            <span class="bottom_name act">考勤</span>
+        </div>
+        <div class="bottom_menu_name">
+            <span class="bottom_icon" onclick="Href('main.html')"><img src="../imgs/owners.png" style="height:100%;width:100%;"></span>
+            <span class="bottom_name" onclick="Href('main.html')">我的</span>
+        </div>
+    </div>
+
+    <!-- 提示框 -->
+    <div class="tagbox" id="tagbox">
+        <span>提交成功</span>
+    </div>
+</div>
+<script src="http://api.map.baidu.com/api?v=2.0&ak=wgOuFDPx7axqgWBnORNpPOLtesYbGcpV"></script>
+<script src="../jquery/jquery.js"></script>
+<script src="../js/common.js"></script>
+<script src='../js/kaoqing.js'></script>
+</body>
+</html>
